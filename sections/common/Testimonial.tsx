@@ -20,11 +20,29 @@ function Testimonial({ reviews, }: IProp) {
     const rafRef = useRef<number | null>(null);
 
 
+    const [isInView, setIsInView] = useState(false);
+    const sectionRef = useRef<HTMLElement>(null);
+
     const displayReviews = testimonialList.length > 0 ? testimonialList : reviews;
 
     useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsInView(entry.isIntersecting);
+            },
+            { threshold: 0.1 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
         const track = trackRef.current;
-        if (!track || loading || displayReviews.length === 0) return;
+        if (!track || loading || displayReviews.length === 0 || !isInView) return;
 
         const halfWidth = track.scrollWidth / 2;
 
@@ -43,10 +61,10 @@ function Testimonial({ reviews, }: IProp) {
         return () => {
             if (rafRef.current) cancelAnimationFrame(rafRef.current);
         };
-    }, [paused, loading, displayReviews.length]);
+    }, [paused, loading, displayReviews.length, isInView]);
 
     return (
-        <section className="py-10 mx-auto mt-[50px] md:mt-[120px] font-pp-mori-regular overflow-x-hidden px-2 md:px-0">
+        <section ref={sectionRef} className="py-10 mx-auto mt-[50px] md:mt-[120px] font-pp-mori-regular overflow-x-hidden px-2 md:px-0">
             <div className="text-center space-y-2">
                 <motion.p
                     initial={{ opacity: 0, y: 40 }}

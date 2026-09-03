@@ -61,7 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${ppMori.variable} ${ppMori.className} h-full antialiased`}>
-      <head>
+      <body className="min-h-full flex flex-col">
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="lazyOnload">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -70,8 +70,6 @@ export default function RootLayout({
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-WDXZJG9N');`}
         </Script>
-      </head>
-      <body className="min-h-full flex flex-col">
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

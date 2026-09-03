@@ -30,8 +30,8 @@ function Hero() {
         show: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.25,
-                delayChildren: 0.3,
+                staggerChildren: 0.15,
+                delayChildren: 0.1,
             },
         },
     };
@@ -53,10 +53,17 @@ function Hero() {
     };
 
 
-    // Text items animation (fade in + move up)
+    // Text items animation (fade in + smooth upward glide)
     const item: Variants = {
-        hidden: { opacity: 0, y: 40 },
-        show: { opacity: 1, y: 0, transition: { duration: 0.8, } },
+        hidden: { opacity: 0, y: 30 },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.7,
+                ease: [0.215, 0.61, 0.355, 1]
+            }
+        },
     };
 
     // Logo motion: enter from left or right with spring
@@ -158,7 +165,7 @@ function Hero() {
 
             {/* Main Text */}
             <motion.div
-                className="relative z-10 md:mt-[50px] md:pt-[1px] md:h-[554px] flex flex-col justify-center items-center "
+                className="relative z-10 md:mt-[50px] md:pt-[1px] md:h-[554px] flex flex-col justify-center items-center"
                 variants={container}
                 initial="hidden"
                 animate="show"
@@ -198,14 +205,13 @@ function Hero() {
                 <motion.div
                     className="flex justify-center relative z-10 mt-8"
                     variants={item}
-                    initial="hidden"
-                    animate="show"
                 >
 
                     <motion.button
                         className="bg-[#1A1A1A] p-5 text-white rounded-md text-xl block mt-5 md:mt-0"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.97 }}
+                        // eslint-disable-next-line @next/next/no-location-assign-relative-destination
                         onClick={() => { window.location.href = '#contact' }}
                     >
                         Start buying credits
