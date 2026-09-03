@@ -1,12 +1,12 @@
 'use client'
 import HeroFeatures from "../../components/HeroFeatures";
 import { GradientLine, Ellipse2 } from "../../components/Svg";
-import GCPLogo from "../../assets/logos/gcp.png";
-import ClaudeLogo from "../../assets/logos/calud.png";
-import GeminiLogo from "../../assets/logos/gemini.png";
-import ChatgptLogo from "../../assets/logos/chatgpt.png";
-import AWSLogo from "../../assets/logos/aws.png";
-import AzureLogo from "../../assets/logos/azure.png";
+import GCPLogo from "../../assets/logos/gcp.webp";
+import ClaudeLogo from "../../assets/logos/calud.webp";
+import GeminiLogo from "../../assets/logos/gemini.webp";
+import ChatgptLogo from "../../assets/logos/chatgpt.webp";
+import AWSLogo from "../../assets/logos/aws.webp";
+import AzureLogo from "../../assets/logos/azure.webp";
 import { motion, type Variants } from "motion/react"; // ✅ use framer-motion directly
 import Image from "next/image";
 

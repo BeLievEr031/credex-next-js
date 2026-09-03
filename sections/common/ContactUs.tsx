@@ -14,6 +14,7 @@ export default function ContactFormModal({ isOpen, onClose, id }: ContactFormMod
 
     useEffect(() => {
         if (isOpen) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setFormLoaded(false);
         }
     }, [isOpen]);
