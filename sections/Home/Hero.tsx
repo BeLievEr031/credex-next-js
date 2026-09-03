@@ -148,49 +148,47 @@ function Hero() {
             </div>
 
             {/* Main Text */}
-            <motion.div
-                className="relative z-10 md:mt-[50px] md:pt-[1px] md:h-[554px] flex flex-col justify-center items-center"
-                variants={container}
-                initial="hidden"
-                animate="show"
-            >
+            <div className="relative z-10 md:mt-[50px] md:pt-[1px] md:h-[554px] flex flex-col justify-center items-center">
                 <motion.div
                     className="border-[1px] border-[#D9D9D9] p-[4px] rounded-full flex items-center gap-x-2 w-[95%] md:w-fit md:pr-3 mx-auto text-[14px] md:text-[16px]"
-                    variants={item}
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
                 >
                     <div className="p-2.5 bg-[#118B6126] rounded-full shrink-0">NO REGRETS</div>
                     <p className="shrink-0">Safe transfer, Anonymous exchange</p>
                 </motion.div>
 
-                <motion.h1 className="text-[48px] md:text-[72px] text-center leading-[50px] md:pt-[32px] font-semibold font-pp-mori-semibold" variants={container}>
-                    <motion.span
-                        className="bg-gradient-to-r from-[#0FF395] to-[#086841] bg-clip-text text-transparent py-5 block"
-                        variants={item}
-                    >
+                {/* H1 renders instantly in HTML (opacity:1 SSR) for LCP, CSS keyframe handles the animation */}
+                <h1 className="text-[48px] md:text-[72px] text-center leading-[50px] md:pt-[32px] font-semibold font-pp-mori-semibold">
+                    <span className="bg-gradient-to-r from-[#0FF395] to-[#086841] bg-clip-text text-transparent py-5 block hero-line-1">
                         Save Up To 60%
-                    </motion.span>
+                    </span>
 
-                    <motion.span
-                        className="mx-auto leading-tight text-[24px] md:text-[72px] px-2 md:px-0 mt-2 md:mt-0 block"
-                        variants={item}
-                    >
+                    <span className="mx-auto leading-tight text-[24px] md:text-[72px] px-2 md:px-0 mt-2 md:mt-0 block hero-line-2">
                         On AI Models & Cloud Credits
-                    </motion.span>
-                </motion.h1>
+                    </span>
+                </h1>
 
-                <motion.div className="text-[18px] md:text-[20px] text-center md:mt-0 px-1 leading-tight pt-4" variants={container}>
-                    <motion.p variants={item}>
+                <motion.div
+                    className="text-[18px] md:text-[20px] text-center md:mt-0 px-1 leading-tight pt-4"
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                >
+                    <p>
                         Buy verified OpenAI, Claude, AWS, Azure and GCP credits from
                         trusted sellers
-                    </motion.p>
+                    </p>
                 </motion.div>
 
                 {/* Button */}
                 <motion.div
                     className="flex justify-center relative z-10 mt-8"
-                    variants={item}
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
                 >
-
                     <motion.button
                         className="bg-[#1A1A1A] p-5 text-white rounded-md text-xl block mt-5 md:mt-0"
                         whileHover={{ scale: 1.05 }}
@@ -201,7 +199,7 @@ function Hero() {
                         Start buying credits
                     </motion.button>
                 </motion.div>
-            </motion.div>
+            </div>
 
 
 
