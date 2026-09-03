@@ -42,12 +42,25 @@ body {
     }
   }
 
+  @keyframes float-slow {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
   .animate-scroll {
     animation: scroll 30s linear infinite;
   }
 
   .animate-scroll-mob {
     animation: scroll-mob 4s linear infinite;
+  }
+
+  .animate-float {
+    animation: float-slow 3.6s ease-in-out infinite;
   }
 }
 

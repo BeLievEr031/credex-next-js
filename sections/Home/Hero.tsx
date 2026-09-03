@@ -37,17 +37,14 @@ function Hero() {
     };
 
     const floatLogo: Variants = {
-        hidden: { opacity: 0, y: 20, scale: 0.95 },
+        hidden: { opacity: 0, scale: 0.95 },
         show: (delay = 0) => ({
             opacity: 1,
-            y: [0, -10, 0],
             scale: 1,
             transition: {
                 delay,
-                duration: 1.8,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatType: "mirror",
+                duration: 0.6,
+                ease: "easeOut",
             },
         }),
     };
@@ -66,32 +63,14 @@ function Hero() {
         },
     };
 
-    // Logo motion: enter from left or right with spring
-    // const logoFromLeft: Variants = {
-    //     hidden: { opacity: 0, x: -80 },
-    //     show: {
-    //         opacity: 1,
-    //         x: 0,
-    //         transition: { type: "spring", stiffness: 60, damping: 15 },
-    //     },
-    // };
-
-    // const logoFromRight: Variants = {
-    //     hidden: { opacity: 0, x: 80 },
-    //     show: {
-    //         opacity: 1,
-    //         x: 0,
-    //         transition: { type: "spring", stiffness: 60, damping: 15 },
-    //     },
-    // };
-
     return (
         <div className="h-screen relative flex justify-center items-center flex-col md:pt-0">
             {/* LEFT Logos */}
             <MotionImage
                 src={GCPLogo}
                 alt="GCP"
-                className="absolute left-20 bottom-16 z-10 w-[120px] h-auto hidden md:block"
+                className="absolute left-20 bottom-16 z-10 w-[120px] h-auto hidden md:block animate-float"
+                style={{ animationDelay: "0s" }}
                 variants={floatLogo}
                 custom={0.3}
                 initial="hidden"
@@ -102,7 +81,8 @@ function Hero() {
             <MotionImage
                 src={ClaudeLogo}
                 alt="Claude"
-                className="absolute left-10 top-[45%] z-10 w-[120px] h-auto hidden md:block"
+                className="absolute left-10 top-[45%] z-10 w-[120px] h-auto hidden md:block animate-float"
+                style={{ animationDelay: "0.4s" }}
                 variants={floatLogo}
                 custom={0.4}
                 initial="hidden"
@@ -113,7 +93,8 @@ function Hero() {
             <MotionImage
                 src={GeminiLogo}
                 alt="Gemini"
-                className="absolute left-36 top-32 z-10 w-[120px] h-auto hidden md:block"
+                className="absolute left-36 top-32 z-10 w-[120px] h-auto hidden md:block animate-float"
+                style={{ animationDelay: "0.8s" }}
                 variants={floatLogo}
                 custom={0.5}
                 initial="hidden"
@@ -125,7 +106,8 @@ function Hero() {
             <MotionImage
                 src={ChatgptLogo}
                 alt="ChatGPT"
-                className="absolute right-20 bottom-16 z-10 w-[120px] h-auto hidden md:block"
+                className="absolute right-20 bottom-16 z-10 w-[120px] h-auto hidden md:block animate-float"
+                style={{ animationDelay: "0.2s" }}
                 variants={floatLogo}
                 custom={0.3}
                 initial="hidden"
@@ -136,7 +118,8 @@ function Hero() {
             <MotionImage
                 src={AWSLogo}
                 alt="AWS"
-                className="absolute right-10 top-[45%] z-10 w-[120px] h-auto hidden md:block"
+                className="absolute right-10 top-[45%] z-10 w-[120px] h-auto hidden md:block animate-float"
+                style={{ animationDelay: "0.6s" }}
                 variants={floatLogo}
                 custom={0.4}
                 initial="hidden"
@@ -147,7 +130,8 @@ function Hero() {
             <MotionImage
                 src={AzureLogo}
                 alt="Azure"
-                className="absolute right-36 top-32 z-10 w-[120px] h-auto hidden md:block"
+                className="absolute right-36 top-32 z-10 w-[120px] h-auto hidden md:block animate-float"
+                style={{ animationDelay: "1s" }}
                 variants={floatLogo}
                 custom={0.5}
                 initial="hidden"
