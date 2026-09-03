@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence, type Variants } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "motion/react";
 import { useRouter } from "next/navigation";
 import TallyForm from "react-tally"
 interface ContactFormModalProps {

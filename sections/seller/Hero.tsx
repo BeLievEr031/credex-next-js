@@ -1,15 +1,15 @@
 'use client'
-import { motion, type Variants } from "framer-motion";
+import { motion, type Variants } from "motion/react";
 import Image from "next/image";
 
 const MotionImage = motion(Image);
 import HeroFeatures from "../../components/HeroFeatures";
-import GCPLogo from "../../assets/logos/gcp.png";
-import ClaudeLogo from "../../assets/logos/calud.png";
-import GeminiLogo from "../../assets/logos/gemini.png";
-import ChatgptLogo from "../../assets/logos/chatgpt.png";
-import AWSLogo from "../../assets/logos/aws.png";
-import AzureLogo from "../../assets/logos/azure.png";
+import GCPLogo from "../../assets/logos/gcp.webp";
+import ClaudeLogo from "../../assets/logos/calud.webp";
+import GeminiLogo from "../../assets/logos/gemini.webp";
+import ChatgptLogo from "../../assets/logos/chatgpt.webp";
+import AWSLogo from "../../assets/logos/aws.webp";
+import AzureLogo from "../../assets/logos/azure.webp";
 
 function Hero() {
     const features = [

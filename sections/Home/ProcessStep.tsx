@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import ProcessStepImg from "../../assets/processing.webp";
 import clsx from "clsx";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 function ProcessStep() {
     const [isScrollable, setIsScrollable] = useState(false);

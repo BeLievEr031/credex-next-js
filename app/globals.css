@@ -1,57 +1,8 @@
 @import "tailwindcss";
-/* ExtraLight */
-/* @font-face {
-  font-family: "PP Mori";
-  src: url("/fonts/PPMori-Extralight.otf") format("opentype");
-  font-weight: 200;
-  font-style: normal;
-} */
-
-/* ExtraLight Italic */
-/* @font-face {
-  font-family: "PP Mori";
-  src: url("/fonts/PPMori-ExtralightItalic.otf") format("opentype");
-  font-weight: 200;
-  font-style: italic;
-} */
-
-/* Regular */
-@font-face {
-  font-family: "PP Mori";
-  src: url("/fonts/PPMori-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Regular Italic */
-/* @font-face {
-  font-family: "PP Mori";
-  src: url("/fonts/PPMori-RegularItalic.otf") format("opentype");
-  font-weight: 400;
-  font-style: italic;
-} */
-
-/* SemiBold */
-@font-face {
-  font-family: "PP Mori";
-  src: url("/fonts/PPMori-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* SemiBold Italic */
-/* @font-face {
-  font-family: "PP Mori";
-  src: url("/fonts/PPMori-SemiBoldItalic.otf") format("opentype");
-  font-weight: 600;
-  font-style: italic;
-} */
 
 @theme {
-  --font-pp-mori-semibold: "PP Mori", system-ui, -apple-system, sans-serif;
-  --font-pp-mori-regular: "PP Mori", system-ui, -apple-system, sans-serif;
+  --font-pp-mori-semibold: var(--font-pp-mori), system-ui, -apple-system, sans-serif;
+  --font-pp-mori-regular: var(--font-pp-mori), system-ui, -apple-system, sans-serif;
 }
 
 html,

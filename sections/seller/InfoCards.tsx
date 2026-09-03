@@ -1,5 +1,5 @@
 "use client"
-import { motion, type Variants } from "framer-motion";
+import { motion, type Variants } from "motion/react";
 import Image from "next/image";
 
 const MotionImage = motion(Image);
