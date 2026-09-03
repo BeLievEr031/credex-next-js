@@ -1,0 +1,31 @@
+# Cloudflare Pages Cache Headers
+# These rules tell the browser and CDN how long to cache each asset type
+
+# Next.js hashed JS/CSS chunks — immutable (1 year)
+# These filenames include content hashes so they're safe to cache forever
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Static assets (images, fonts, icons)
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.ico
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML pages — always revalidate (no cache)
+# Important: don't cache HTML or users may see stale pages
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
