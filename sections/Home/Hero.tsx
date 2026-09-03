@@ -7,11 +7,8 @@ import GeminiLogo from "../../assets/logos/gemini.webp";
 import ChatgptLogo from "../../assets/logos/chatgpt.webp";
 import AWSLogo from "../../assets/logos/aws.webp";
 import AzureLogo from "../../assets/logos/azure.webp";
-import { motion, type Variants } from "motion/react"; // ✅ use framer-motion directly
+import { motion, type Variants } from "motion/react";
 import Image from "next/image";
-
-const MotionImage = motion(Image);
-
 
 function Hero() {
 
@@ -36,20 +33,6 @@ function Hero() {
         },
     };
 
-    const floatLogo: Variants = {
-        hidden: { opacity: 0, scale: 0.95 },
-        show: (delay = 0) => ({
-            opacity: 1,
-            scale: 1,
-            transition: {
-                delay,
-                duration: 0.6,
-                ease: "easeOut",
-            },
-        }),
-    };
-
-
     // Text items animation (fade in + smooth upward glide)
     const item: Variants = {
         hidden: { opacity: 0, y: 30 },
@@ -65,78 +48,48 @@ function Hero() {
 
     return (
         <div className="h-screen relative flex justify-center items-center flex-col md:pt-0">
-            {/* LEFT Logos */}
-            <MotionImage
+            {/* LEFT Logos — CSS-only float + fade-in (zero JS animation cost) */}
+            <Image
                 src={GCPLogo}
                 alt="GCP"
-                className="absolute left-20 bottom-16 z-10 w-[120px] h-auto hidden md:block animate-float"
-                style={{ animationDelay: "0s" }}
-                variants={floatLogo}
-                custom={0.3}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
+                className="absolute left-20 bottom-16 z-10 w-[120px] h-auto hidden md:block hero-logo"
+                style={{ '--float-delay': '0s' } as React.CSSProperties}
             />
 
-            <MotionImage
+            <Image
                 src={ClaudeLogo}
                 alt="Claude"
-                className="absolute left-10 top-[45%] z-10 w-[120px] h-auto hidden md:block animate-float"
-                style={{ animationDelay: "0.4s" }}
-                variants={floatLogo}
-                custom={0.4}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
+                className="absolute left-10 top-[45%] z-10 w-[120px] h-auto hidden md:block hero-logo"
+                style={{ '--float-delay': '0.4s' } as React.CSSProperties}
             />
 
-            <MotionImage
+            <Image
                 src={GeminiLogo}
                 alt="Gemini"
-                className="absolute left-36 top-32 z-10 w-[120px] h-auto hidden md:block animate-float"
-                style={{ animationDelay: "0.8s" }}
-                variants={floatLogo}
-                custom={0.5}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
+                className="absolute left-36 top-32 z-10 w-[120px] h-auto hidden md:block hero-logo"
+                style={{ '--float-delay': '0.8s' } as React.CSSProperties}
             />
 
             {/* RIGHT Logos */}
-            <MotionImage
+            <Image
                 src={ChatgptLogo}
                 alt="ChatGPT"
-                className="absolute right-20 bottom-16 z-10 w-[120px] h-auto hidden md:block animate-float"
-                style={{ animationDelay: "0.2s" }}
-                variants={floatLogo}
-                custom={0.3}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
+                className="absolute right-20 bottom-16 z-10 w-[120px] h-auto hidden md:block hero-logo"
+                style={{ '--float-delay': '0.2s' } as React.CSSProperties}
             />
 
-            <MotionImage
+            <Image
                 src={AWSLogo}
                 alt="AWS"
-                className="absolute right-10 top-[45%] z-10 w-[120px] h-auto hidden md:block animate-float"
-                style={{ animationDelay: "0.6s" }}
-                variants={floatLogo}
-                custom={0.4}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
+                className="absolute right-10 top-[45%] z-10 w-[120px] h-auto hidden md:block hero-logo"
+                style={{ '--float-delay': '0.6s' } as React.CSSProperties}
             />
 
-            <MotionImage
+            <Image
                 src={AzureLogo}
                 alt="Azure"
-                className="absolute right-36 top-32 z-10 w-[120px] h-auto hidden md:block animate-float"
-                style={{ animationDelay: "1s" }}
-                variants={floatLogo}
-                custom={0.5}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
+                className="absolute right-36 top-32 z-10 w-[120px] h-auto hidden md:block hero-logo"
+                style={{ '--float-delay': '1s' } as React.CSSProperties}
             />
 
 
@@ -231,3 +184,4 @@ function Hero() {
 }
 
 export default Hero;
+
