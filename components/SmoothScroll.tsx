@@ -10,6 +10,7 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
             easing: (t) => 1 - Math.pow(1 - t, 3),
         });
 
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const raf = (time: any) => {
             lenis.raf(time);
             requestAnimationFrame(raf);

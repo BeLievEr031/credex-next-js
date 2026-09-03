@@ -1,14 +1,16 @@
 import type { Metadata } from "next"
-import AgencySavings from "@/sections/Home/AgencySavings"
-import Faq from "@/sections/common/Faq"
-import Footer from "@/sections/common/Footer"
-import Hero from "@/sections/Home/Hero"
-import ProcessStep from "@/sections/Home/ProcessStep"
-import Security from "@/sections/Home/Security"
-import StatsFeatureSection from "@/sections/Home/StatsFeatureSection"
-import Testimonial from "@/sections/common/Testimonial"
+import dynamic from "next/dynamic"
 import Navbar from "@/components/Navbar"
-import PlansAndPricing from "@/sections/Home/PlansAndPricing"
+import Hero from "@/sections/Home/Hero"
+
+const StatsFeatureSection = dynamic(() => import("@/sections/Home/StatsFeatureSection"))
+const PlansAndPricing = dynamic(() => import("@/sections/Home/PlansAndPricing"))
+const ProcessStep = dynamic(() => import("@/sections/Home/ProcessStep"))
+const Security = dynamic(() => import("@/sections/Home/Security"))
+const AgencySavings = dynamic(() => import("@/sections/Home/AgencySavings"))
+const Testimonial = dynamic(() => import("@/sections/common/Testimonial"))
+const Faq = dynamic(() => import("@/sections/common/Faq"))
+const Footer = dynamic(() => import("@/sections/common/Footer"))
 
 import AveryImg from "@/assets/buyers/Avery_Nguyen_USA_13_50.webp";
 import FatimaImg from "@/assets/buyers/Fatima_Al_Qasimi_UAE_3_50.webp";

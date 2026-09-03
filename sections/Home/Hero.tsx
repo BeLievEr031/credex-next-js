@@ -84,7 +84,6 @@ function Hero() {
             <MotionImage
                 src={GCPLogo}
                 alt="GCP"
-                priority
                 className="absolute left-20 bottom-16 z-10 w-[120px] h-auto hidden md:block"
                 variants={floatLogo}
                 custom={0.3}
@@ -96,7 +95,6 @@ function Hero() {
             <MotionImage
                 src={ClaudeLogo}
                 alt="Claude"
-                priority
                 className="absolute left-10 top-[45%] z-10 w-[120px] h-auto hidden md:block"
                 variants={floatLogo}
                 custom={0.4}
@@ -108,7 +106,6 @@ function Hero() {
             <MotionImage
                 src={GeminiLogo}
                 alt="Gemini"
-                priority
                 className="absolute left-36 top-32 z-10 w-[120px] h-auto hidden md:block"
                 variants={floatLogo}
                 custom={0.5}
@@ -121,7 +118,6 @@ function Hero() {
             <MotionImage
                 src={ChatgptLogo}
                 alt="ChatGPT"
-                priority
                 className="absolute right-20 bottom-16 z-10 w-[120px] h-auto hidden md:block"
                 variants={floatLogo}
                 custom={0.3}
@@ -133,7 +129,6 @@ function Hero() {
             <MotionImage
                 src={AWSLogo}
                 alt="AWS"
-                priority
                 className="absolute right-10 top-[45%] z-10 w-[120px] h-auto hidden md:block"
                 variants={floatLogo}
                 custom={0.4}
@@ -145,7 +140,6 @@ function Hero() {
             <MotionImage
                 src={AzureLogo}
                 alt="Azure"
-                priority
                 className="absolute right-36 top-32 z-10 w-[120px] h-auto hidden md:block"
                 variants={floatLogo}
                 custom={0.5}

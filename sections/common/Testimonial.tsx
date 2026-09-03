@@ -110,7 +110,7 @@ function ReviewCard({ designation, name, review, imgSrc }: { name: string; desig
             <p className={clsx("text-[12px] md:text-[16px]")}>“{review}”</p>
             <div className="flex gap-x-2 md:gap-x-4 mt-4 items-center">
                 <div className="shrink-0 rounded-full overflow-hidden border border-gray-200 size-[25px] md:size-[50px] relative">
-                    <Image src={imgSrc} alt={`Profile photo of ${name}`} fill unoptimized className="scale-125 object-cover object-top" />
+                    <Image src={imgSrc} alt={`Profile photo of ${name}`} fill loading="lazy" sizes="50px" unoptimized className="scale-125 object-cover object-top" />
                 </div>
                 <div className="">
                     <p className="text-[#1A1A1A] font-medium text-[9px] md:text-[16px]">{name}</p>
