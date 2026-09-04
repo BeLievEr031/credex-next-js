@@ -50,11 +50,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const response = await blogApi.getBlogs({ active: true, limit: 100 });
     if (response?.data?.success && Array.isArray(response?.data?.blogs)) {
       const blogs = response.data.blogs;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const blogEntries: MetadataRoute.Sitemap = blogs.map((blog: any) => ({
         url: `${baseUrl}/blog/${blog.slug}`,
         lastModified: new Date(blog.createdAt || new Date()),
         changeFrequency: "weekly" as const,
-        priority: 0.6,
+        priority: 0.75,
       }));
       sitemapEntries.push(...blogEntries);
     }

@@ -22,14 +22,60 @@ import NikolaiImg from "@/assets/sellers/Nikolai_Petrov_Czechia_50.webp";
 import SofiaImg from "@/assets/sellers/Sofia_Dimitrova_Bulgaria_50.webp";
 
 export const metadata: Metadata = {
-  title: "Sell Unused AI & Cloud Credits - Recover Sunk Costs | Credex",
-  description: "Turn idle OpenAI, Claude, AWS, Azure, and GCP credits into cash. Safe, confidential escrow transfer for verified companies with Mutual NDA.",
+  title: "Sell Unused AI & Cloud Credits — Monetize & Recover Sunk Costs | Credex",
+  description: "Turn idle OpenAI, Claude, AWS, GCP, Azure, Cursor, Lambda Labs, and Supabase credits into cash. Sell unused AI and cloud credits securely via escrow. Monetize leftover, expiring, or startup credits with Mutual NDA and confidential transfer.",
+  keywords: [
+    // Core sell intent
+    "sell aws credits", "sell unused aws credits", "sell aws credits for cash",
+    "sell gcp credits", "sell unused gcp credits", "sell azure credits",
+    "sell unused azure credits", "sell openai credits", "sell ai credits",
+    "sell cloud credits", "sell unused cloud credits", "sell google cloud credits",
+    // Monetize intent
+    "monetize aws credits", "monetize gcp credits", "monetize azure credits",
+    "monetize cloud credits", "monetize cursor credits", "monetize lambda labs credits",
+    "monetize supabase credits", "monetize mongodb credits", "monetize digitalocean credits",
+    "monetize posthog credits",
+    // Cash out / convert
+    "cash out aws credits", "cash out cloud credits", "convert aws credits to cash",
+    "how to cash out aws credits", "how to get money for unused credits",
+    // Specific platform sell
+    "sell lambda labs credits", "sell unused lambda labs credits",
+    "sell cursor credits", "sell unused cursor credits",
+    "sell supabase credits", "sell unused supabase credits",
+    "sell mongodb credits", "sell unused mongodb credits",
+    "sell posthog credits", "sell unused posthog credits",
+    "sell gpu credits",
+    // Resell intent
+    "resell aws credits", "resell ai credits", "resell cloud credits",
+    "resell azure credits", "resell gcp credits", "resell openai credits",
+    "resell startup credits", "resell unused credits", "resell claude credits",
+    "aws credits reselling", "can you sell aws credits", "can i resell aws credits",
+    // How-to informational
+    "how to sell aws credits", "how to sell ai credits", "how to sell cloud credits",
+    "how to sell unused aws credits", "how to resell aws credits", "how to resell ai credits",
+    "how to monetize aws credits", "where can i sell aws credits",
+    "where can i sell ai credits", "where to sell ai credits online",
+    "where to sell aws credits", "place to sell aws credits",
+    "best place to sell aws credits", "best place to sell ai credits",
+    "best website to sell cloud credits", "website to sell aws credits",
+    "website to sell ai credits", "website to resell ai credits",
+    "site to sell unused credits", "platform to sell aws credits",
+    "platform to sell ai credits", "platform to sell cloud credits",
+    // Unused/leftover credits
+    "unused aws credits", "leftover aws credits", "aws activate credits expiring",
+    "aws activate credits for sale", "how do i sell my aws credits",
+    "unused mongodb atlas credits", "where can i sell unused cloud credits",
+    "what to do with leftover ai credits",
+    // Monetize AWS specifically
+    "how to monetize aws credits", "aws bill too high", "how to resell ai credits",
+    "can i sell my openai credits",
+  ],
   alternates: {
     canonical: "https://credex.rocks/seller",
   },
   openGraph: {
-    title: "Sell Unused AI & Cloud Credits - Recover Sunk Costs | Credex",
-    description: "Turn idle OpenAI, Claude, AWS, Azure, and GCP credits into cash. Safe, confidential escrow transfer for verified companies with Mutual NDA.",
+    title: "Sell Unused AI & Cloud Credits — Monetize & Recover Sunk Costs | Credex",
+    description: "Turn idle OpenAI, Claude, AWS, GCP, Azure, and other credits into cash. Sell unused AI and cloud credits securely via escrow with Mutual NDA on Credex.",
     url: "https://credex.rocks/seller",
     type: "website",
     images: [
@@ -43,8 +89,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sell Unused AI & Cloud Credits - Recover Sunk Costs | Credex",
-    description: "Turn idle OpenAI, Claude, AWS, Azure, and GCP credits into cash. Safe, confidential escrow transfer for verified companies with Mutual NDA.",
+    title: "Sell Unused AI & Cloud Credits — Monetize & Recover Sunk Costs | Credex",
+    description: "Turn idle OpenAI, Claude, AWS, GCP, Azure, and other credits into cash. Sell unused AI and cloud credits securely via escrow on Credex.",
     images: ["https://credex.rocks/images/credex-social.jpg"],
   },
 };

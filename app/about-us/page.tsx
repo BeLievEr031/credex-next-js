@@ -4,14 +4,23 @@ import Footer from "@/sections/common/Footer";
 import AboutUsClient from "@/components/AboutUsClient";
 
 export const metadata: Metadata = {
-  title: "About Us | Credex - Secure Cloud & AI Credit Exchange",
-  description: "Learn about the Credex mission to eliminate digital waste in cloud and AI computing. We securely connect buyers and sellers of unused credits.",
+  title: "About Us | Credex — Trusted AI & Cloud Credit Marketplace",
+  description: "Learn about Credex — the trusted marketplace for buying, selling, and monetizing unused AI and cloud credits. We eliminate digital waste by securely connecting verified buyers and sellers of AWS, OpenAI, GCP, Azure, and Claude credits.",
+  keywords: [
+    "about credex", "credex marketplace", "cloud credits marketplace",
+    "ai credits marketplace", "trusted cloud credits platform",
+    "sell unused cloud credits", "buy discounted cloud credits",
+    "resell ai credits platform", "unused aws credits marketplace",
+    "openai credits marketplace", "gcp credits marketplace",
+    "cloud cost optimization platform", "ai credit exchange",
+    "cloud credits reseller platform", "secure credit transfer",
+  ],
   alternates: {
     canonical: "https://credex.rocks/about-us",
   },
   openGraph: {
-    title: "About Us | Credex - Secure Cloud & AI Credit Exchange",
-    description: "Learn about the Credex mission to eliminate digital waste in cloud and AI computing. We securely connect buyers and sellers of unused credits.",
+    title: "About Us | Credex — Trusted AI & Cloud Credit Marketplace",
+    description: "Learn about Credex — the trusted marketplace for buying, selling, and monetizing unused AI and cloud credits. We securely connect buyers and sellers of AWS, OpenAI, GCP, Azure, and Claude credits.",
     url: "https://credex.rocks/about-us",
     type: "website",
     images: [
@@ -25,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Us | Credex - Secure Cloud & AI Credit Exchange",
-    description: "Learn about the Credex mission to eliminate digital waste in cloud and AI computing. We securely connect buyers and sellers of unused credits.",
+    title: "About Us | Credex — Trusted AI & Cloud Credit Marketplace",
+    description: "Learn about Credex — the trusted marketplace for buying, selling, and monetizing unused AI and cloud credits.",
     images: ["https://credex.rocks/images/credex-social.jpg"],
   },
 };

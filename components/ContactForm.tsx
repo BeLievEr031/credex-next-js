@@ -166,8 +166,9 @@ export default function ContactForm({ type = "BUYER" }: { type?: "SELLER" | "BUY
                 <form onSubmit={handleSubmit} className="space-y-6 w-full">
                     {/* Name */}
                     <div>
-                        <label className={labelClasses}>Full Name <span className="text-red-500">*</span></label>
+                        <label htmlFor="contact-name" className={labelClasses}>Full Name <span className="text-red-500">*</span></label>
                         <input
+                            id="contact-name"
                             type="text"
                             name="name"
                             value={formData.name}
@@ -181,8 +182,9 @@ export default function ContactForm({ type = "BUYER" }: { type?: "SELLER" | "BUY
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {/* Email */}
                         <div>
-                            <label className={labelClasses}>Email Address <span className="text-red-500">*</span></label>
+                            <label htmlFor="contact-email" className={labelClasses}>Email Address <span className="text-red-500">*</span></label>
                             <input
+                                id="contact-email"
                                 type="email"
                                 name="email"
                                 value={formData.email}
@@ -195,11 +197,13 @@ export default function ContactForm({ type = "BUYER" }: { type?: "SELLER" | "BUY
 
                         {/* Phone */}
                         <div>
-                            <label className={labelClasses}>Phone Number <span className="text-red-500">*</span></label>
+                            <label htmlFor="contact-phone" className={labelClasses}>Phone Number <span className="text-red-500">*</span></label>
                             <div className="flex gap-2 items-center">
                                 {isMounted ? (
                                     <Select
                                         instanceId={countrySelectId}
+                                        inputId="contact-country-code"
+                                        aria-label="Country code"
                                         options={countryOptions}
                                         value={selectedOption}
                                         onChange={(option) => {
@@ -253,6 +257,7 @@ export default function ContactForm({ type = "BUYER" }: { type?: "SELLER" | "BUY
 
                                 {/* Phone Number Input */}
                                 <input
+                                    id="contact-phone"
                                     type="tel"
                                     name="phone"
                                     value={formData.phone}
@@ -268,8 +273,9 @@ export default function ContactForm({ type = "BUYER" }: { type?: "SELLER" | "BUY
 
                     {/* Company Name */}
                     <div>
-                        <label className={labelClasses}>Company Name <span className="text-red-500">*</span></label>
+                        <label htmlFor="contact-company" className={labelClasses}>Company Name <span className="text-red-500">*</span></label>
                         <input
+                            id="contact-company"
                             type="text"
                             name="companyName"
                             value={formData.companyName}
@@ -282,10 +288,11 @@ export default function ContactForm({ type = "BUYER" }: { type?: "SELLER" | "BUY
 
                     {/* Select Platforms (react-select) */}
                     <div className="relative">
-                        <label className={labelClasses}>Select Platforms <span className="text-red-500">*</span></label>
+                        <label htmlFor="contact-platforms" className={labelClasses}>Select Platforms <span className="text-red-500">*</span></label>
                         {isMounted ? (
                             <Select
                                 instanceId={platformSelectId}
+                                inputId="contact-platforms"
                                 isMulti
                                 options={options}
                                 value={options.filter(opt => formData.selectedLicenses.includes(opt.value))}
@@ -360,8 +367,9 @@ export default function ContactForm({ type = "BUYER" }: { type?: "SELLER" | "BUY
 
                     {/* Other Platforms */}
                     <div>
-                        <label className={labelClasses}>Others (Please specify)</label>
+                        <label htmlFor="contact-other-platforms" className={labelClasses}>Others (Please specify)</label>
                         <input
+                            id="contact-other-platforms"
                             type="text"
                             name="otherPlatforms"
                             value={formData.otherPlatforms}
@@ -373,8 +381,9 @@ export default function ContactForm({ type = "BUYER" }: { type?: "SELLER" | "BUY
 
                     {/* Message */}
                     <div>
-                        <label className={labelClasses}>Message (Optional)</label>
+                        <label htmlFor="contact-message" className={labelClasses}>Message (Optional)</label>
                         <textarea
+                            id="contact-message"
                             name="message"
                             value={formData.message}
                             onChange={handleChange}

@@ -144,6 +144,7 @@ function Navbar({ links = [] }: IProp) {
 
     return (
         <header
+            suppressHydrationWarning
             className={clsx(
                 "transition-all duration-500 w-[90%] md:w-7xl mx-auto border border-[#D9D9D9] rounded-full fixed top-4 left-1/2 -translate-x-1/2 flex items-center px-8 py-2 md:py-1 justify-between z-50 bg-white/80 backdrop-blur-md shadow-sm font-pp-mori-semibold",
                 {
@@ -184,6 +185,7 @@ function Navbar({ links = [] }: IProp) {
             })}>
                 <Link
                     href={"/"}
+                    suppressHydrationWarning
                     className={clsx("rounded-full p-[12px]", {
                         "border border-[#086841] bg-[#0FF39557]":
                             !pathname || !pathname.includes("/seller"),
@@ -195,6 +197,7 @@ function Navbar({ links = [] }: IProp) {
                 </Link>
                 <Link
                     href={"/seller"}
+                    suppressHydrationWarning
                     className={clsx("rounded-full p-[12px]", {
                         "border border-[#086841] bg-[#0FF39557]":
                             pathname ? pathname.includes("/seller") : false,
@@ -292,6 +295,7 @@ function Navbar({ links = [] }: IProp) {
                 <div className="w-[100%] flex justify-center bg-[#D0D5CE33 px-2 py-2 rounded-full items-center">
                     <Link
                         href={"/"}
+                        suppressHydrationWarning
                         className={clsx("rounded-full px-[35px] py-[18px]", {
                             "border border-[#086841] bg-[#0FF39557]":
                                 !pathname || !pathname.includes("/seller"),
@@ -304,6 +308,7 @@ function Navbar({ links = [] }: IProp) {
                     </Link>
                     <Link
                         href={"/seller"}
+                        suppressHydrationWarning
                         className={clsx("rounded-full px-[40px] py-[8px] ", {
                             "border border-[#086841] bg-[#0FF39557]":
                                 pathname ? pathname.includes("/seller") : false,

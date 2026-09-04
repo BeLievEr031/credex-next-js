@@ -26,15 +26,53 @@ import SofiaImg from "@/assets/buyers/Sofia_Nilsson_Sweden_3_50.webp";
 import WeiLinImg from "@/assets/buyers/Wei-Lin_Tan_Singapore_2_50.webp";
 
 export const metadata: Metadata = {
-  title: "Credex | Buy & Sell Unused AI & Cloud Credits Securely",
-  description: "Save up to 60% by purchasing verified, unused AI and cloud credits (OpenAI, Claude, AWS, GCP & Azure) or resell your excess credits securely.",
-  keywords: "OpenAI credits, AWS credits, GCP credits, sell AI credits, buy cloud credits, Claude credits, Anthropic credits, Gemini credits, resell unused credits, cloud marketplace, AI tools discount",
+  title: "Credex | Buy & Sell Unused AI & Cloud Credits — Save Up to 60%",
+  description: "Buy discounted AWS, OpenAI, GCP, Azure, Claude, and Gemini credits at up to 60% off, or sell and monetize your unused AI and cloud credits securely. Credex is the trusted marketplace for buyers and sellers of AI and cloud credits.",
+  keywords: [
+    // Buy intent — homepage primary
+    "buy aws credits", "buy openai credits", "buy gcp credits", "buy azure credits",
+    "buy claude credits", "buy anthropic credits", "buy gemini credits",
+    "buy gpu credits", "buy h100 credits", "buy a100 credits",
+    "buy lambda labs credits", "buy cloudflare credits", "buy supabase credits",
+    "buy mongodb credits", "buy deepgram credits", "buy posthog credits",
+    "purchase aws credits", "purchase openai credits", "purchase gcp credits",
+    "buy openai credits online", "buy aws credits online", "buy gcp credits online",
+    "buy google cloud credits", "buy cursor credits",
+    // For sale
+    "aws credits for sale", "openai credits for sale", "gcp credits for sale",
+    "azure credits for sale", "google cloud credits for sale", "claude api credits for sale",
+    "anthropic credits for sale", "gemini credits for sale", "lambda labs credits for sale",
+    "cloudflare credits for sale", "supabase credits for sale", "cursor credits for sale",
+    "mongodb credits for sale", "openai api credits for sale",
+    // Sell / monetize intent
+    "sell aws credits", "sell unused aws credits", "sell gcp credits",
+    "sell azure credits", "sell openai credits", "sell ai credits",
+    "sell cloud credits", "monetize aws credits", "monetize cloud credits",
+    "cash out aws credits", "convert aws credits to cash",
+    "sell aws credits for cash", "sell unused cloud credits",
+    // Resell / marketplace
+    "resell aws credits", "resell ai credits", "resell cloud credits",
+    "resell startup credits", "cloud credits reseller", "ai credits reseller",
+    "aws credits marketplace", "platform to sell ai credits",
+    // Discount / cheap
+    "discounted aws credits", "discounted openai credits", "discounted gcp credits",
+    "discounted azure credits", "discounted claude credits", "cheap aws credits",
+    "cheap openai credits", "cheap gcp credits", "cheap azure credits",
+    // AI model credits
+    "buy gpt credits", "buy gpt 4 credits", "buy gpt 4o credits",
+    "buy claude sonnet credits", "buy claude opus credits", "buy claude haiku credits",
+    "buy gemini flash credits", "buy gemini pro credits", "buy mistral credits",
+    "buy deepseek credits", "buy grok credits", "buy llama credits",
+    // Cost optimization
+    "cloud cost optimization", "aws cost optimization", "reduce aws bill",
+    "cloud cost management", "unused aws credits", "leftover aws credits",
+  ],
   alternates: {
     canonical: "https://credex.rocks/",
   },
   openGraph: {
-    title: "Credex | Buy & Sell Unused AI & Cloud Credits Securely",
-    description: "Save up to 60% by purchasing verified, unused AI and cloud credits or resell your excess credits securely.",
+    title: "Credex | Buy & Sell Unused AI & Cloud Credits — Save Up to 60%",
+    description: "Buy discounted AWS, OpenAI, GCP, Azure, and Claude credits at up to 60% off, or sell and monetize your unused AI and cloud credits securely through Credex.",
     url: "https://credex.rocks/",
     siteName: "Credex",
     images: [
@@ -50,8 +88,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Credex | Buy & Sell Unused AI & Cloud Credits Securely",
-    description: "Save up to 60% by purchasing verified, unused AI and cloud credits or resell your excess credits securely.",
+    title: "Credex | Buy & Sell Unused AI & Cloud Credits — Save Up to 60%",
+    description: "Buy discounted AWS, OpenAI, GCP, Azure, and Claude credits at up to 60% off, or sell and monetize your unused AI and cloud credits securely through Credex.",
     creator: "@credex",
     images: ["https://credex.rocks/images/credex-social.jpg"],
   },
@@ -256,7 +294,7 @@ export default function Home() {
     };
 
     return (
-        <section className="relative min-h-screen w-full font-pp-mori-regular overflow-x-hidden">
+        <main className="relative min-h-screen w-full font-pp-mori-regular overflow-x-hidden">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -307,6 +345,6 @@ export default function Home() {
             />
             <Faq faqs={faqs} type="BUYER" />
             <Footer key={"page-footer-45"} />
-        </section>
+        </main>
     )
 }

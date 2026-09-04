@@ -22,8 +22,38 @@ const ppMori = localFont({
 
 export const metadata: Metadata = {
   title: "Credex Buy & Sell Unused AI and Cloud Credits (OpenAI, AWS, GCP & More)",
-  description: "Credex is the trusted marketplace for reselling unused AI and cloud credits from OpenAI, Claude, Gemini, Anthropic, AWS, GCP, and more securely and at minimal cost.",
-  keywords: "OpenAI credits, AWS credits, GCP credits, sell AI credits, buy cloud credits, Claude credits, Anthropic credits, Gemini credits, resell unused credits, cloud marketplace, AI tools discount",
+  description: "Credex is the trusted marketplace to buy, sell, and monetize unused AI and cloud credits from OpenAI, Claude, Gemini, Anthropic, AWS, GCP, Azure, and more — securely and at up to 60% off list price.",
+  keywords: [
+    // Buy intent
+    "buy aws credits", "buy openai credits", "buy gcp credits", "buy azure credits",
+    "buy claude credits", "buy anthropic credits", "buy gemini credits",
+    "buy gpu credits", "buy lambda labs credits", "purchase aws credits",
+    "purchase openai credits", "purchase gcp credits", "purchase azure credits",
+    "buy openai credits online", "buy aws credits online", "buy gcp credits online",
+    // Sell intent
+    "sell aws credits", "sell unused aws credits", "sell gcp credits",
+    "sell azure credits", "sell openai credits", "sell ai credits",
+    "sell cloud credits", "sell unused cloud credits", "monetize aws credits",
+    "monetize cloud credits", "monetize gcp credits", "cash out aws credits",
+    "convert aws credits to cash", "sell aws credits for cash",
+    // Resell/marketplace intent
+    "resell aws credits", "resell ai credits", "resell cloud credits",
+    "resell unused credits", "resell startup credits", "cloud credits reseller",
+    "ai credits reseller", "aws credit reseller", "platform to sell ai credits",
+    "website to sell ai credits", "best place to sell aws credits",
+    // Discount/cheap intent
+    "discounted openai credits", "discounted aws credits", "discounted gcp credits",
+    "discounted azure credits", "discounted claude credits", "cheap aws credits",
+    "cheap gcp credits", "cheap azure credits", "cheap openai credits",
+    "openai api credits discount", "aws credits marketplace",
+    // Specific platform credits for sale
+    "aws credits for sale", "openai credits for sale", "gcp credits for sale",
+    "azure credits for sale", "claude credits for sale", "google cloud credits for sale",
+    // Cost optimization
+    "cloud cost optimization", "aws cost optimization", "reduce aws bill",
+    "lower aws costs", "cloud cost management", "unused aws credits",
+    "leftover aws credits", "aws activate credits expiring",
+  ],
   authors: [{ name: "Credex" }],
   robots: "index, follow",
   alternates: {
