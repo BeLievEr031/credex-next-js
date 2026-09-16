@@ -57,27 +57,27 @@ function Footer({ actionBtn1Text = "Get credits", actionBtn2Text = "Talk to sale
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
 
-                    {/* Card 1 — Buy Credits */}
+                    {/* Card 1 Buy Credits */}
                     <div className="border-l-2 border-[#0FF39540] pl-5 flex flex-col gap-3">
                         <h3 className="text-white text-[15px] font-semibold font-pp-mori-semibold leading-snug">
                             Buy AI &amp; Cloud Credits at a Discount
                         </h3>
                         <p className="text-[#8FA8A6] text-[13px] leading-[1.9]">
-                            Credex is the most trusted marketplace to buy discounted AI and cloud credits — at up to 50% off retail rates. Whether you need to buy AWS credits, buy Azure credits, buy GCP credits, or buy OpenAI credits, our network of verified sellers has you covered. Developers and startups can also buy Claude credits, buy Gemini credits, buy GPU credits, and access discounted Anthropic, OpenRouter, and Lambda Labs credits — all through one platform, without the usual procurement overhead.
+                            Credex is the most trusted marketplace to buy discounted AI and cloud credits at up to 50% off retail rates. Whether you need to buy AWS credits, buy Azure credits, buy GCP credits, or buy OpenAI credits, our network of verified sellers has you covered. Developers and startups can also buy Claude credits, buy Gemini credits, buy GPU credits, and access discounted Anthropic, OpenRouter, and Lambda Labs credits all through one platform, without the usual procurement overhead.
                         </p>
                     </div>
 
-                    {/* Card 2 — Sell Credits */}
+                    {/* Card 2 Sell Credits */}
                     <div className="border-l-2 border-[#0FF39540] pl-5 flex flex-col gap-3">
                         <h3 className="text-white text-[15px] font-semibold font-pp-mori-semibold leading-snug">
                             Sell &amp; Monetise Unused Credits
                         </h3>
                         <p className="text-[#8FA8A6] text-[13px] leading-[1.9]">
-                            Sitting on unused startup credits? Credex is the best platform to sell cloud credits before they expire and recover real value from them. List and sell AWS credits, sell Azure credits, sell GCP credits, sell OpenAI credits, or monetize MongoDB Atlas, Cursor, and Lambda Labs credits in minutes. Whether your AWS Activate credits are expiring or you simply have leftover cloud credits you no longer need, Credex makes it easy to convert them into cash — securely and without hassle.
+                            Sitting on unused startup credits? Credex is the best platform to sell cloud credits before they expire and recover real value from them. List and sell AWS credits, sell Azure credits, sell GCP credits, sell OpenAI credits, or monetize MongoDB Atlas, Cursor, and Lambda Labs credits in minutes. Whether your AWS Activate credits are expiring or you simply have leftover cloud credits you no longer need, Credex makes it easy to convert them into cash securely and without hassle.
                         </p>
                     </div>
 
-                    {/* Card 3 — Cost Optimisation */}
+                    {/* Card 3 Cost Optimisation */}
                     <div className="border-l-2 border-[#0FF39540] pl-5 flex flex-col gap-3">
                         <h3 className="text-white text-[15px] font-semibold font-pp-mori-semibold leading-snug">
                             Cloud &amp; AI Cost Optimisation

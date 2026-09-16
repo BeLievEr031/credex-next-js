@@ -3,7 +3,7 @@ import { motion, type Variants } from "motion/react"
 import Image from "next/image"
 import StatsImg1 from "../../assets/stats1.webp"
 
-const MotionImage = motion(Image);
+const MotionImage = motion.create(Image);
 import OpenAiIMg from "../../assets/openai.png"
 import GCPImg from "../../assets/gcp.png"
 import AWSImg from "../../assets/aws.png"

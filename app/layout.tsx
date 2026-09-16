@@ -91,7 +91,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${ppMori.variable} ${ppMori.className} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         {/* Google Tag Manager (Optimized & Deferred to prevent blocking Main Thread) */}
         <Script id="gtm-script" strategy="lazyOnload">
           {`
