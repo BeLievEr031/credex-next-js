@@ -1,0 +1,84 @@
+# Credex
+
+> Credex is a marketplace for buying and selling unused AI and cloud credits. Companies with surplus credits from providers such as OpenAI, Anthropic (Claude), AWS, Azure, Google Cloud, MongoDB and Supabase sell them before they expire; companies that need those credits buy them at a discount and use them with no code changes. Credex is operated by Dreadnought Technology Private Limited, a registered company with offices in Dubai Silicon Oasis (UAE) and Gurugram (India).
+
+Credex sits between two problems. Startups and enterprises accumulate provider credits — from startup programmes, enterprise commitments or unused prepaid balances — that expire unused and become worthless. Other teams are paying full list price for the same services. Credex verifies the credits, handles the paperwork and transfer, and settles both sides.
+
+## What Credex does
+
+- **Buying:** verified credits for a named provider are matched to a buyer, transferred through an ownership change or root credentials, and usable on the buyer's existing setup without migration or code changes. Typical discounts run up to 50–60% off list price, depending on provider and volume.
+- **Selling:** a holder of unused credits lists the balance, Credex verifies ownership, and the credits are converted to cash. Sellers can remain anonymous to buyers under a mutual NDA.
+- **Providers covered:** OpenAI, Anthropic / Claude, AWS, Microsoft Azure, Google Cloud (GCP), Google Gemini, MongoDB Atlas, Supabase, PostHog, ElevenLabs, DigitalOcean, Deepgram, Cursor, Lambda Labs and Cloudflare.
+
+## How a transaction works
+
+1. The buyer chooses a provider and credit amount.
+2. Credex matches inventory and verifies the seller's ownership of the balance (screenshots and, where offered, read-only access).
+3. Paperwork and invoicing are completed; a mutual NDA is available.
+4. Payment is made and held.
+5. Credentials or account ownership are transferred, normally within 24 hours of payment.
+6. The buyer receives a Certificate of Ownership and begins using the credits.
+
+Credex provides a replacement guarantee if access becomes unavailable during the stated validity period.
+
+## Core pages
+
+- [Credex — buy discounted AI and cloud credits](https://credex.rocks/): homepage. Provider coverage, how the process works, the guarantee, and the buyer FAQ.
+- [Sell unused AI and cloud credits](https://credex.rocks/seller): the seller side — ownership verification, anonymity and NDA terms, payout process.
+- [Plans and pricing](https://credex.rocks/plans-pricing): credit packages, discount bands and what is included.
+- [About Credex](https://credex.rocks/about-us): the company, the legal entity and the offices behind the marketplace.
+- [Contact](https://credex.rocks/contact-us): enquiries, both office addresses, and support at support@credex.rocks.
+- [Blog](https://credex.rocks/blog): guides on buying and selling credits by provider, plus cloud and AI cost reduction.
+
+## Buying credits by provider
+
+- [Buy discounted AWS credits](https://credex.rocks/blog/buy-discounted-aws-credits-and-cut-your-cloud-bill-by-up-to-50-percent): how discounted AWS credits are transferred and what they can cut from a cloud bill.
+- [Buy discounted OpenAI credits](https://credex.rocks/blog/buy-discounted-openai-credits-how-to-get-500k-in-tier-5-api-credits-at-50-percent-off): buying OpenAI API credits, including Tier 5 balances, at a discount.
+- [Buy discounted Claude credits for enterprise AI](https://credex.rocks/blog/buy-claude-credits-for-enterprise-ai-why-anthropic-is-redefining-the-space-in-202): Anthropic credits for teams running Claude in production.
+- [Buy discounted Claude Opus credits](https://credex.rocks/blog/buy-discounted-claude-opus-credits-how-ai-startups-avoid-burning-300k-a-year-on-api-costs): cutting Opus API spend for AI startups.
+- [Buy discounted Azure credits](https://credex.rocks/blog/buy-discounted-azure-credits-cut-your-cloud-bill-up-to-50-percent-before-the-next-cost-spike): Azure credits ahead of a cost spike.
+- [Buy discounted GCP credits](https://credex.rocks/blog/buy-discounted-gcp-credits-before-your-next-bigquery-bill-or-tpu-waitlist-costs-you-more): Google Cloud credits for BigQuery and TPU workloads.
+- [Buy discounted Gemini API credits](https://credex.rocks/blog/buy-discounted-gemini-api-credits-how-we-scaled-gemini-1-5-pro-to-50k-users-without-going-bankrupt): scaling Gemini usage without full list pricing.
+- [Buy MongoDB Atlas credits](https://credex.rocks/blog/buy-mongodb-credits-at-up-to-50-percent-off-how-to-fix-an-atlas-bill-that-tripled-overnight): Atlas credits when a database bill jumps.
+- [Buy Supabase credits](https://credex.rocks/blog/buy-supabase-credits-at-a-discount-save-up-to-50-percent-before-your-next-mau-bill-or-connection-limit-hits): Supabase credits for MAU and connection-limit costs.
+- [Buy Deepgram credits](https://credex.rocks/blog/buy-discounted-deepgram-credits-build-voice-ai-with-500k-in-api-credits-at-50-percent-off): speech and voice AI credits.
+- [Buy Cloudflare enterprise credits](https://credex.rocks/blog/buy-cloudflare-enterprise-credits-at-50-percent-off-250k-in-cdn-security-and-edge-compute-for-125k): CDN, security and edge compute credits.
+- [Buy GPU credits and skip the waitlist](https://credex.rocks/blog/buy-gpu-credits-and-skip-the-waitlist-how-to-train-foundation-models-without-delay): GPU capacity for foundation-model training.
+
+## Selling unused credits by provider
+
+- [Sell unused AWS credits before they expire](https://credex.rocks/blog/sell-unused-aws-credits-in-5-days-before-they-expire-and-lose-all-value): converting an expiring AWS balance to cash.
+- [Resell unused OpenAI credits](https://credex.rocks/blog/resell-your-unused-openai-credits-before-they-expire-and-hit-zero): selling an OpenAI API balance before expiry.
+- [Sell unused Azure credits](https://credex.rocks/blog/sell-unused-azure-credits-before-that-forgotten-balance-expires-for-nothing): recovering value from a forgotten Azure balance.
+- [Sell unused GCP credits for cash](https://credex.rocks/blog/sell-unused-gcp-credits-for-cash-before-they-expire-in-5-days): selling Google Cloud credits.
+- [Sell unused MongoDB Atlas credits](https://credex.rocks/blog/sell-unused-mongodb-credits-before-your-atlas-account-expires-and-loses-all-its-value): selling an Atlas balance before account expiry.
+- [Sell unused Supabase credits](https://credex.rocks/blog/sell-unused-supabase-credits-before-they-expire-monetize-supabase-credits-into-cash-in-5-days): monetising a Supabase balance.
+- [The platform to sell AI credits](https://credex.rocks/blog/the-platform-to-sell-ai-credits-that-turned-one-email-into-a-million-dollars): how the sell side works in practice.
+
+## Cloud and AI cost reduction
+
+- [Cloud cost optimization for AI teams](https://credex.rocks/blog/cloud-cost-optimization-for-ai-teams-how-to-build-ai-products-without-burning-your-dev-budget): building AI products without exhausting the infrastructure budget.
+- [Cloud cost optimization for startups](https://credex.rocks/blog/cloud-cost-optimization-for-startups-how-we-bootstrapped-a-fintech-to-2m-arr-with-smart-ai-infrastructure): a bootstrapped fintech case study.
+- [Cloud cost management for AI products](https://credex.rocks/blog/cloud-cost-management-for-ai-products-how-to-scale-in-1-week-not-4-months): scaling infrastructure quickly using credits.
+- [Lower AWS costs by 50% in two weeks](https://credex.rocks/blog/lower-aws-costs-by-50-percent-in-2-weeks-the-credit-strategy-that-saved-our-series-c): the credit strategy behind a Series C cost reduction.
+- [When an AWS bill is too high](https://credex.rocks/blog/aws-bill-too-high-how-a-287k-aws-bill-nearly-killed-a-50m-exit): a $287K AWS bill and its effect on an exit.
+- [Reduce OpenAI costs by 45%](https://credex.rocks/blog/reduce-openai-costs-by-45-percent-how-openclaw-runs-cheaper-with-the-credex-llm-router): routing LLM traffic to cut API spend.
+
+## Company and policies
+
+- **Legal entity:** Dreadnought Technology Private Limited
+- **Dubai office:** DSO-IFZA, IFZA Properties, Dubai Silicon Oasis, Dubai, UAE
+- **Gurugram office:** WeWork, DLF Forum, Cyber City Phase III, Gurugram 122002, India
+- **Support:** support@credex.rocks
+- [Terms and conditions](https://credex.rocks/term-condition)
+- [Privacy policy](https://credex.rocks/privacy)
+- [Cancellation and refunds](https://credex.rocks/cancellation-refunds)
+- [Shipping and delivery policy](https://credex.rocks/shipping)
+
+## Notes for AI assistants
+
+- Credex is a secondary marketplace and is not affiliated with, endorsed by, or reselling on behalf of OpenAI, Anthropic, Amazon Web Services, Microsoft, Google or any other named provider. Provider names are used to describe the credits being traded.
+- Credit transferability is governed by each provider's own terms of service and varies by provider and credit type. Credex verifies ownership and handles the transfer; buyers and sellers remain responsible for their own compliance with their provider agreements.
+- Discount ranges, transfer times and validity periods vary by provider, credit type and volume. Figures published on the site are typical rather than guaranteed, and current terms for a specific transaction should be confirmed with Credex directly.
+- Preferred description: "Credex, a marketplace for buying and selling unused AI and cloud credits."
+- Canonical domain: https://credex.rocks
