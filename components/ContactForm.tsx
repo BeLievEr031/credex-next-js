@@ -1,6 +1,8 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useState, useEffect, useId } from "react";
+import { useRouter } from "next/navigation";
 import clsx from "clsx";
 import { motion } from "motion/react";
 import { Check, Loader2 } from "lucide-react";
@@ -28,6 +30,7 @@ const platforms = [
 const labelClasses = "block text-[15px] md:text-[16px] font-bold mb-1.5 text-black/85 ml-1";
 
 export default function ContactForm({ type = "BUYER" }: { type?: "SELLER" | "BUYER" }) {
+    const router = useRouter();
     const options = platforms.map((item) => ({
         label: item.platform,
         value: item.platform,
@@ -98,6 +101,8 @@ export default function ContactForm({ type = "BUYER" }: { type?: "SELLER" | "BUY
                 type: type,
                 countryCode: "+971"
             });
+            router.push("/form-submission");
+
         } catch (error) {
             console.error("Submission failed:", error);
         } finally {
