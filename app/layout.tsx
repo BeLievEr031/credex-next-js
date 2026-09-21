@@ -91,9 +91,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${ppMori.variable} ${ppMori.className} h-full antialiased`}>
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+      <head>
         {/* Google Tag Manager (Optimized & Deferred to prevent blocking Main Thread) */}
-        <Script id="gtm-script" strategy="lazyOnload">
+        <Script id="gtm-script" strategy="afterInteractive">
           {`
             function loadGTM() {
               if (window.gtmLoaded) return;
@@ -116,6 +116,8 @@ export default function RootLayout({
             }
           `}
         </Script>
+      </head>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
