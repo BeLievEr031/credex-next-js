@@ -42,7 +42,7 @@ const platforms = [
     {
         "platform": "Anthropic/Claude",
         "logo": ClaudeSrc,
-        "credits": ["Sold Out"],
+        "credits": ["$5K", "$10K", "$25K", "$100K"],
         "validity": "1 yr",
         "rateLimits": "Enterprise Rate Limits"
     },
