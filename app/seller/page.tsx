@@ -264,6 +264,10 @@ export default function SellerPage() {
                         link: '#guarantee'
                     },
                     {
+                        lable: "Pricing",
+                        link: '/plans-pricing'
+                    },
+                    {
                         lable: "FAQ",
                         link: '#faq'
                     },

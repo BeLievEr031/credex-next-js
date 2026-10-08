@@ -30,9 +30,12 @@ function Footer({ actionBtn1Text = "Get credits", actionBtn2Text = "Talk to sale
                         }
                     </p>
                     <div className="pt-4 flex gap-x-2.5">
-                        <button onClick={() => {
-                            window.location.href = (pathname === "/" || pathname === "/seller") ? "#contact" : "/#contact"
-                        }} className="py-[12px] px-[15px] md:py-[16px] text-[15px] md:px-[20px] bg-[#0FF395] rounded-md block font-semibold font-pp-mori-semibold md:text-xl cursor-pointer relative z-10">{actionBtn1Text}</button>
+                        <Link
+                            href={(pathname === "/" || pathname === "/seller") ? "#contact" : "/#contact"}
+                            className="py-[12px] px-[15px] md:py-[16px] text-[15px] md:px-[20px] bg-[#0FF395] rounded-md block font-semibold font-pp-mori-semibold md:text-xl cursor-pointer relative z-10 text-center"
+                        >
+                            {actionBtn1Text}
+                        </Link>
                         <a href={actionBtnLink} target="_blank" className="py-[12px] px-[15px] md:py-[16px] text-[15px] md:px-[20px] bg-[#0FF39533] rounded-md text-white block font-semibold font-pp-mori-semibold md:text-xl">{actionBtn2Text}</a>
                     </div>
 
@@ -52,9 +55,9 @@ function Footer({ actionBtn1Text = "Get credits", actionBtn2Text = "Talk to sale
 
             {/* SEO Section */}
             <div className="mt-16 md:mt-20 bg-[#062524] py-12 px-4 md:px-28">
-                <p className="text-[11px] font-pp-mori-semibold font-semibold tracking-[0.18em] uppercase text-[#0FF395] mb-8">
+                <h2 className="text-[11px] md:text-[13px] font-pp-mori-semibold font-semibold tracking-[0.18em] uppercase text-[#0FF395] mb-8">
                     What Credex Covers
-                </p>
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
 
                     {/* Card 1 Buy Credits */}
@@ -63,27 +66,84 @@ function Footer({ actionBtn1Text = "Get credits", actionBtn2Text = "Talk to sale
                             Buy AI &amp; Cloud Credits at a Discount
                         </h3>
                         <p className="text-[#8FA8A6] text-[13px] leading-[1.9]">
-                            Credex is the most trusted marketplace to buy discounted AI and cloud credits at up to 50% off retail rates. Whether you need to buy AWS credits, buy Azure credits, buy GCP credits, or buy OpenAI credits, our network of verified sellers has you covered. Developers and startups can also buy Claude credits, buy Gemini credits, buy GPU credits, and access discounted Anthropic, OpenRouter, and Lambda Labs credits all through one platform, without the usual procurement overhead.
+                            Credex is the most trusted marketplace to buy discounted AI and cloud credits at up to 50% off retail rates. Whether you need to{" "}
+                            <Link href="/blog/buy-discounted-aws-credits-and-cut-your-cloud-bill-by-up-to-50-percent" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                buy AWS credits
+                            </Link>,{" "}
+                            <Link href="/blog/buy-discounted-azure-credits-cut-your-cloud-bill-up-to-50-percent-before-the-next-cost-spike" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                buy Azure credits
+                            </Link>,{" "}
+                            <Link href="/blog/buy-discounted-gcp-credits-before-your-next-bigquery-bill-or-tpu-waitlist-costs-you-more" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                buy GCP credits
+                            </Link>, or{" "}
+                            <Link href="/blog/buy-discounted-openai-credits-how-to-get-500k-in-tier-5-api-credits-at-50-percent-off" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                buy OpenAI credits
+                            </Link>, our network of verified sellers has you covered. Developers and startups can also{" "}
+                            <Link href="/blog/buy-discounted-claude-opus-credits-how-ai-startups-avoid-burning-300k-a-year-on-api-costs" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                buy Claude credits
+                            </Link>,{" "}
+                            <Link href="/blog/buy-discounted-gemini-api-credits-how-we-scaled-gemini-1-5-pro-to-50k-users-without-going-bankrupt" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                buy Gemini credits
+                            </Link>,{" "}
+                            <Link href="/blog/buy-gpu-credits-and-skip-the-waitlist-how-to-train-foundation-models-without-delay" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                buy GPU credits
+                            </Link>, and access discounted Anthropic, OpenRouter, and Lambda Labs credits all through one platform, without the usual procurement overhead.
                         </p>
                     </div>
 
                     {/* Card 2 Sell Credits */}
                     <div className="border-l-2 border-[#0FF39540] pl-5 flex flex-col gap-3">
                         <h3 className="text-white text-[15px] font-semibold font-pp-mori-semibold leading-snug">
-                            Sell &amp; Monetise Unused Credits
+                            Sell &amp; Monetize Unused Credits
                         </h3>
                         <p className="text-[#8FA8A6] text-[13px] leading-[1.9]">
-                            Sitting on unused startup credits? Credex is the best platform to sell cloud credits before they expire and recover real value from them. List and sell AWS credits, sell Azure credits, sell GCP credits, sell OpenAI credits, or monetize MongoDB Atlas, Cursor, and Lambda Labs credits in minutes. Whether your AWS Activate credits are expiring or you simply have leftover cloud credits you no longer need, Credex makes it easy to convert them into cash securely and without hassle.
+                            Sitting on unused startup credits? Credex is the best platform to{" "}
+                            <Link href="/seller" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                sell cloud credits
+                            </Link>{" "}
+                            before they expire and recover real value from them. List and{" "}
+                            <Link href="/blog/sell-unused-aws-credits-in-5-days-before-they-expire-and-lose-all-value" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                sell AWS credits
+                            </Link>,{" "}
+                            <Link href="/blog/sell-unused-azure-credits-before-that-forgotten-balance-expires-for-nothing" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                sell Azure credits
+                            </Link>,{" "}
+                            <Link href="/blog/sell-unused-gcp-credits-for-cash-before-they-expire-in-5-days" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                sell GCP credits
+                            </Link>,{" "}
+                            <Link href="/blog/resell-your-unused-openai-credits-before-they-expire-and-hit-zero" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                sell OpenAI credits
+                            </Link>, or monetize{" "}
+                            <Link href="/blog/sell-unused-mongodb-credits-before-your-atlas-account-expires-and-loses-all-its-value" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                MongoDB Atlas
+                            </Link>, Cursor, and Lambda Labs credits in minutes. Whether your AWS Activate credits are expiring or you simply have leftover cloud credits you no longer need, Credex makes it easy to convert them into cash securely and without hassle.
                         </p>
                     </div>
 
-                    {/* Card 3 Cost Optimisation */}
+                    {/* Card 3 Cost Optimization */}
                     <div className="border-l-2 border-[#0FF39540] pl-5 flex flex-col gap-3">
                         <h3 className="text-white text-[15px] font-semibold font-pp-mori-semibold leading-snug">
-                            Cloud &amp; AI Cost Optimisation
+                            Cloud &amp; AI Cost Optimization
                         </h3>
                         <p className="text-[#8FA8A6] text-[13px] leading-[1.9]">
-                            Credex helps engineering and finance teams take control of runaway cloud and AI spend. If your AWS bill is too high, your OpenAI API costs are escalating, or you need a smarter approach to cloud cost management, our marketplace gives you access to discounted credits that meaningfully reduce AWS costs, lower Azure costs, and cut GCP spend. From AWS cost optimization to Azure cost optimization and GCP cost optimization, Credex turns cloud cost management from a burden into a competitive advantage.
+                            Credex helps engineering and finance teams take control of runaway cloud and AI spend. If your{" "}
+                            <Link href="/blog/aws-bill-too-high-how-a-287k-aws-bill-nearly-killed-a-50m-exit" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                AWS bill is too high
+                            </Link>, your{" "}
+                            <Link href="/blog/reduce-openai-costs-by-45-percent-how-openclaw-runs-cheaper-with-the-credex-llm-router" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                OpenAI API costs
+                            </Link>{" "}
+                            are escalating, or you need a smarter approach to{" "}
+                            <Link href="/blog/cloud-cost-management-for-ai-products-how-to-scale-in-1-week-not-4-months" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                cloud cost management
+                            </Link>, our marketplace gives you access to discounted credits that meaningfully{" "}
+                            <Link href="/blog/lower-aws-costs-by-50-percent-in-2-weeks-the-credit-strategy-that-saved-our-series-c" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                reduce AWS costs
+                            </Link>, lower Azure costs, and cut GCP spend. From{" "}
+                            <Link href="/blog/cloud-cost-optimization-for-startups-how-we-bootstrapped-a-fintech-to-2m-arr-with-smart-ai-infrastructure" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                                AWS cost optimization
+                            </Link>{" "}
+                            to Azure cost optimization and GCP cost optimization, Credex turns cloud cost management from a burden into a competitive advantage.
                         </p>
                     </div>
 
@@ -161,7 +221,7 @@ function Footer({ actionBtn1Text = "Get credits", actionBtn2Text = "Talk to sale
 
 
 
-                    <Image src={FTLogo} alt="FT Logo" className="w-full h-[120px] md:hidden opacity-50 mt-5" />
+                    <Image src={FTLogo} alt="Credex" className="w-full h-[120px] md:hidden opacity-50 mt-5" />
 
                 </div>
             </div>
@@ -177,6 +237,46 @@ function Footer({ actionBtn1Text = "Get credits", actionBtn2Text = "Talk to sale
                             </span>
                             <Link href={"/about-us"}>
                                 About Us
+                            </Link>
+                        </div>
+                        <div className="flex items-center gap-x-1 shrink-0">
+                            <span className="text-3xl">
+                                •
+                            </span>
+                            <Link href={"/plans-pricing"}>
+                                Pricing
+                            </Link>
+                        </div>
+                        <div className="flex items-center gap-x-1 shrink-0">
+                            <span className="text-3xl">
+                                •
+                            </span>
+                            <Link href={"/blog"}>
+                                Blog
+                            </Link>
+                        </div>
+                        <div className="flex items-center gap-x-1 shrink-0">
+                            <span className="text-3xl">
+                                •
+                            </span>
+                            <Link href={"/contact-us"}>
+                                Contact
+                            </Link>
+                        </div>
+                        <div className="flex items-center gap-x-1 shrink-0">
+                            <span className="text-3xl">
+                                •
+                            </span>
+                            <Link href={"/refferal/buyer"}>
+                                Referral – Buyer
+                            </Link>
+                        </div>
+                        <div className="flex items-center gap-x-1 shrink-0">
+                            <span className="text-3xl">
+                                •
+                            </span>
+                            <Link href={"/refferal/seller"}>
+                                Referral – Seller
                             </Link>
                         </div>
                         <div className="flex items-center gap-x-1 shrink-0">

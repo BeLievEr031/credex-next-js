@@ -1,6 +1,7 @@
 "use client"
 import { motion, type Variants } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const MotionImage = motion(Image);
 import { CheckCircle2 } from "lucide-react";
@@ -127,6 +128,13 @@ export default function InfoCards() {
                                     </li>
                                 ))}
                             </motion.ul>
+
+                            <p className="text-sm md:text-base text-[#5B677C] mt-4">
+                                Read more about our escrow protocol and{" "}
+                                <Link href="/about-us" className="text-[#086841] font-semibold underline underline-offset-4 hover:text-[#0FF395] transition-colors">
+                                    how Credex works
+                                </Link>.
+                            </p>
                         </motion.div>
 
                         {/* Decorative SVG */}

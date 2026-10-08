@@ -2,6 +2,7 @@
 import SecurityImg from "../../assets/security.webp";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const MotionImage = motion(Image);
 import ProofSection from "../common/Proof";
@@ -89,6 +90,13 @@ function Security() {
                             <span className="text-green-700 mx-1">
                                 Credex will replace credits or refund the unused balance after verification.
                             </span>
+                        </p>
+                        <p className="text-sm md:text-base text-[#5B677C] mt-3">
+                            Learn more{" "}
+                            <Link href="/about-us" className="text-[#086841] font-semibold underline underline-offset-4 hover:text-[#0FF395] transition-colors">
+                                about Credex
+                            </Link>{" "}
+                            and our verification model.
                         </p>
                     </motion.div>
                 </motion.div>

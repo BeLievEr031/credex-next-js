@@ -121,7 +121,12 @@ interface IProp {
     links?: { lable: string; link: string }[];
 }
 
-function Navbar({ links = [] }: IProp) {
+const defaultHeaderLinks = [
+    { lable: "Pricing", link: "/plans-pricing" },
+    { lable: "Blog", link: "/blog" },
+];
+
+function Navbar({ links = defaultHeaderLinks }: IProp) {
     const pathname = usePathname();
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -211,25 +216,26 @@ function Navbar({ links = [] }: IProp) {
             {/* Right Links */}
             {links.length > 0 && <div className="hidden md:flex items-center gap-x-8 text-[#000000CC] pr-2">
                 {links.map(({ lable, link }) => {
-                    if (lable !== "Blog") {
-                        return <a key={lable} href={link}>
-                            {lable}
-                        </a>
-                    } else if (lable === "Blog") {
-                        return <Link key={lable} href={"/blog"} >
-                            Blog
-                        </Link>
-                    }
-                    else {
-                        return <button key={lable} className="cursor-pointer" onClick={() => { window.location.href = '#contact' }}>
-                            Contact
-                        </button>
+                    if (link.startsWith("/")) {
+                        return (
+                            <Link key={lable} href={link} className="hover:text-[#086841] transition-colors">
+                                {lable}
+                            </Link>
+                        );
+                    } else if (link.startsWith("#")) {
+                        return (
+                            <a key={lable} href={link} className="hover:text-[#086841] transition-colors">
+                                {lable}
+                            </a>
+                        );
+                    } else {
+                        return (
+                            <button key={lable} className="cursor-pointer hover:text-[#086841] transition-colors" onClick={() => { window.location.href = link }}>
+                                {lable}
+                            </button>
+                        );
                     }
                 })}
-
-                {/* <button className={clsx("rounded-full px-6 py-2  border border-[#086841] bg-[#afdcc957] cursor-pointer")}>
-                    Contact
-                </button> */}
             </div>}
 
             {/* Mobile Hamburger */}
@@ -323,20 +329,24 @@ function Navbar({ links = [] }: IProp) {
                 <div className="flex flex-col items-start gap-y-2 px-3">
 
                     {links.map(({ lable, link }) => {
-                        // console.log(lable);
-
-                        if (lable !== "Blog") {
-                            return <a key={lable} href={link}>
-                                {lable}
-                            </a>
-                        } else if (lable === "Blog") {
-                            return <Link key={lable} href={"/blog"} >
-                                Blog
-                            </Link>
+                        if (link.startsWith("/")) {
+                            return (
+                                <Link key={lable} href={link} onClick={() => setIsMenuOpen(false)} className="hover:text-[#086841] transition-colors py-1">
+                                    {lable}
+                                </Link>
+                            );
+                        } else if (link.startsWith("#")) {
+                            return (
+                                <a key={lable} href={link} onClick={() => setIsMenuOpen(false)} className="hover:text-[#086841] transition-colors py-1">
+                                    {lable}
+                                </a>
+                            );
                         } else {
-                            return <button key={lable} className="cursor-pointer" onClick={() => { window.location.href = '#contact' }}>
-                                Contact
-                            </button>
+                            return (
+                                <button key={lable} className="cursor-pointer hover:text-[#086841] transition-colors py-1" onClick={() => { setIsMenuOpen(false); window.location.href = link; }}>
+                                    {lable}
+                                </button>
+                            );
                         }
                     })}
                 </div>

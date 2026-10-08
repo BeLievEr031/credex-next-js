@@ -318,6 +318,10 @@ export default function Home() {
                         link: '#guarantee'
                     },
                     {
+                        lable: "Pricing",
+                        link: '/plans-pricing'
+                    },
+                    {
                         lable: "FAQ",
                         link: '#faq'
                     },
