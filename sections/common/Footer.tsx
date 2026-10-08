@@ -263,22 +263,22 @@ function Footer({ actionBtn1Text = "Get credits", actionBtn2Text = "Talk to sale
                                 Contact
                             </Link>
                         </div>
-                        <div className="flex items-center gap-x-1 shrink-0">
+                        {/* <div className="flex items-center gap-x-1 shrink-0">
                             <span className="text-3xl">
                                 •
                             </span>
                             <Link href={"/refferal/buyer"}>
                                 Referral – Buyer
                             </Link>
-                        </div>
-                        <div className="flex items-center gap-x-1 shrink-0">
+                        </div> */}
+                        {/* <div className="flex items-center gap-x-1 shrink-0">
                             <span className="text-3xl">
                                 •
                             </span>
                             <Link href={"/refferal/seller"}>
                                 Referral – Seller
                             </Link>
-                        </div>
+                        </div> */}
                         <div className="flex items-center gap-x-1 shrink-0">
                             <span className="text-3xl">
                                 •
