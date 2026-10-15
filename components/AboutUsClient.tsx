@@ -4,12 +4,12 @@ import { useState } from "react";
 import { motion, type Variants } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { 
-  Shield, 
-  Cpu, 
-  Code2, 
-  RefreshCw, 
-  ArrowRight, 
+import {
+  Shield,
+  Cpu,
+  Code2,
+  RefreshCw,
+  ArrowRight,
   ChevronDown,
   Building2,
   Percent,
@@ -96,10 +96,10 @@ export default function AboutUsClient() {
 
   return (
     <div className="relative w-full overflow-hidden bg-[#fafafa]">
-      
+
       {/* 1. Hero Section */}
       <section className="relative min-h-[90vh] flex flex-col justify-center items-center pt-20 pb-16 px-4 md:px-0">
-        
+
         {/* Floating Background Logos (Left Side) */}
         <motion.div
           variants={floatLogo}
@@ -110,7 +110,7 @@ export default function AboutUsClient() {
         >
           <Image src={GCPLogo} alt="Google Cloud (GCP) credits" className="w-full h-auto object-contain" />
         </motion.div>
-        
+
         <motion.div
           variants={floatLogo}
           custom={0.5}
@@ -168,15 +168,15 @@ export default function AboutUsClient() {
         </div>
 
         {/* Hero Content */}
-        <motion.div 
+        <motion.div
           className="relative z-10 max-w-4xl mx-auto text-center"
           variants={container}
           initial="hidden"
           animate="show"
         >
           {/* Visible Breadcrumb */}
-          <motion.nav 
-            aria-label="Breadcrumb" 
+          <motion.nav
+            aria-label="Breadcrumb"
             className="flex items-center justify-center gap-2 text-[14px] text-[#5B677C] mb-6"
             variants={item}
           >
@@ -189,7 +189,7 @@ export default function AboutUsClient() {
             </span>
           </motion.nav>
 
-          <motion.div 
+          <motion.div
             className="inline-flex items-center gap-x-2 border border-[#D9D9D9] p-1.5 pr-4 rounded-full bg-white/70 backdrop-blur-sm text-[13px] md:text-[14px]"
             variants={item}
           >
@@ -197,7 +197,7 @@ export default function AboutUsClient() {
             <span className="text-[#5B677C]">Optimizing computational runway worldwide</span>
           </motion.div>
 
-          <motion.h1 
+          <motion.h1
             className="text-[34px] sm:text-[44px] md:text-[60px] leading-[42px] sm:leading-[52px] md:leading-[68px] font-semibold font-pp-mori-semibold text-[#19363F] mt-6 tracking-tight"
             variants={item}
           >
@@ -216,7 +216,7 @@ export default function AboutUsClient() {
             Capital Efficiency
           </motion.p>
 
-          <motion.p 
+          <motion.p
             className="text-[#5B677C] text-[16px] md:text-[19px] max-w-2xl mx-auto mt-6 leading-relaxed px-4"
             variants={item}
           >
@@ -231,17 +231,17 @@ export default function AboutUsClient() {
             before they expire.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             className="flex flex-wrap items-center justify-center gap-4 mt-8"
             variants={item}
           >
-            <Link 
+            <Link
               href="/"
               className="py-3.5 px-7 bg-[#1A1A1A] hover:bg-black text-white rounded-md font-semibold text-[16px] transition-all cursor-pointer shadow-sm hover:scale-[1.03] active:scale-[0.98] inline-block text-center"
             >
               Get Discounted Credits
             </Link>
-            <Link 
+            <Link
               href="/seller"
               className="py-3.5 px-7 border border-neutral-300 hover:border-neutral-800 bg-white text-[#1A1A1A] rounded-md font-semibold text-[16px] transition-all cursor-pointer hover:scale-[1.03] active:scale-[0.98] inline-block text-center"
             >
@@ -260,7 +260,7 @@ export default function AboutUsClient() {
       <section className="py-20 md:py-28 bg-white border-y border-neutral-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
+
             {/* Column 1: Left */}
             <div className="lg:col-span-5">
               <span className="text-[14px] font-semibold text-[#086841] tracking-wider uppercase">OUR MISSION</span>
@@ -273,7 +273,7 @@ export default function AboutUsClient() {
             {/* Column 2: Right */}
             <div className="lg:col-span-7 text-[#5B677C] text-[16px] md:text-[18px] leading-relaxed space-y-6">
               <p>
-                Credex was founded with a straightforward realization: <strong>letting computational resources expire is digital waste</strong>. As AI infrastructure becomes the single largest expense line for modern tech companies, capital efficiency is no longer optional—it is a competitive necessity.
+                Credex was founded with a straightforward realization: <strong>letting computational resources expire is digital waste</strong>. As AI infrastructure becomes the single largest expense line for modern tech companies, capital efficiency is no longer optionalit is a competitive necessity.
               </p>
               <p>
                 Accelerators, incubators, and cloud providers grant billions in credit pools to startups. When startups pivot, shut down, scale down, or simply over-purchase, those high-value credits sit idle. We established Credex to help companies reclaim cash from these depreciating assets, passing the savings to scaling teams that need them most.
@@ -296,7 +296,7 @@ export default function AboutUsClient() {
               Who&apos;s behind Credex
             </h2>
             <p className="text-[#5B677C] text-[16px] md:text-[18px] mt-4 leading-relaxed">
-              Credex is built and operated by Dreadnought Technology Private Limited, with teams in Dubai (IFZA, Dubai Silicon Oasis) and Gurugram, India. We operate a secure, audited secondary marketplace for AI and cloud credits, helping startups optimize infrastructure budgets while allowing companies to monetize unused computational runway.
+              Credex has offices in Delaware, US, Gurugram, India and Dubai, UAE. We started in 2020 after our founder had to shut down his previous startup and was struggling to pay off his vendors and then he managed to sell off his credits at a discount to get out of debt. Today we help 650 startups and 1500 sellers move $100 Million in AI and cloud credits.
             </p>
           </div>
 
@@ -343,7 +343,7 @@ export default function AboutUsClient() {
       {/* 3. Core Values Grid */}
       <section className="py-20 md:py-28 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto px-6">
-          
+
           <div className="text-center mb-16">
             <span className="text-[14px] font-semibold text-[#086841] tracking-wider uppercase">OUR CORE PILLARS</span>
             <h2 className="text-[32px] md:text-[44px] font-semibold font-pp-mori-semibold text-[#19363F] mt-3">
@@ -355,9 +355,9 @@ export default function AboutUsClient() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            
+
             {/* Pillar 1 */}
-            <motion.div 
+            <motion.div
               className="bg-white border border-neutral-200/80 rounded-2xl p-8 flex flex-col justify-between transition-all"
               variants={valueCardHover}
               whileHover="hover"
@@ -376,7 +376,7 @@ export default function AboutUsClient() {
             </motion.div>
 
             {/* Pillar 2 */}
-            <motion.div 
+            <motion.div
               className="bg-white border border-neutral-200/80 rounded-2xl p-8 flex flex-col justify-between transition-all"
               variants={valueCardHover}
               whileHover="hover"
@@ -395,7 +395,7 @@ export default function AboutUsClient() {
             </motion.div>
 
             {/* Pillar 3 */}
-            <motion.div 
+            <motion.div
               className="bg-white border border-neutral-200/80 rounded-2xl p-8 flex flex-col justify-between transition-all"
               variants={valueCardHover}
               whileHover="hover"
@@ -414,7 +414,7 @@ export default function AboutUsClient() {
             </motion.div>
 
             {/* Pillar 4 */}
-            <motion.div 
+            <motion.div
               className="bg-white border border-neutral-200/80 rounded-2xl p-8 flex flex-col justify-between transition-all"
               variants={valueCardHover}
               whileHover="hover"
@@ -440,7 +440,7 @@ export default function AboutUsClient() {
       <section className="py-20 md:py-24 bg-white border-t border-neutral-100">
         <div className="max-w-5xl mx-auto px-6">
           <div className="bg-[#062524] rounded-3xl p-8 md:p-14 text-white relative overflow-hidden">
-            
+
             {/* Background design elements */}
             <div className="absolute right-0 top-0 opacity-15 translate-x-12 -translate-y-12">
               <svg width="400" height="400" fill="none" viewBox="0 0 200 200">
@@ -457,7 +457,7 @@ export default function AboutUsClient() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 relative z-10">
-              
+
               <div className="flex flex-col">
                 <div className="flex items-center gap-x-3">
                   <span className="w-8 h-8 rounded-full bg-[#0FF395] text-[#062524] flex items-center justify-center font-bold text-[14px]">1</span>
@@ -503,13 +503,13 @@ export default function AboutUsClient() {
             Whether you want to buy credits at up to 50% off or monetize idle accelerator grants, our team is ready to assist.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link 
+            <Link
               href="/plans-pricing"
               className="w-full sm:w-auto py-3.5 px-8 bg-[#086841] hover:bg-[#062524] text-white rounded-md font-semibold text-[16px] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm"
             >
               Start Saving Now <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link 
+            <Link
               href="/contact-us"
               className="w-full sm:w-auto py-3.5 px-8 bg-white border border-neutral-300 hover:border-neutral-500 rounded-md font-semibold text-[16px] text-neutral-800 transition-all cursor-pointer text-center"
             >
@@ -533,7 +533,7 @@ export default function AboutUsClient() {
             {faqs.map((faq, index) => {
               const isOpen = openFaq === index;
               return (
-                <div 
+                <div
                   key={index}
                   className="border border-neutral-200/80 rounded-2xl overflow-hidden bg-[#FAFAFA] transition-colors"
                 >
@@ -547,9 +547,9 @@ export default function AboutUsClient() {
                     </h3>
                     <ChevronDown className={`w-5 h-5 text-[#5B677C] shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180 text-[#086841]" : ""}`} />
                   </button>
-                  
+
                   {/* Content always present in the DOM for SEO, with height transition */}
-                  <div 
+                  <div
                     className={`px-6 overflow-hidden transition-all duration-300 ${isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 pb-0 opacity-0"}`}
                   >
                     <p className="text-[#5B677C] text-[15px] md:text-[16px] leading-relaxed">
