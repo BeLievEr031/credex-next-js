@@ -26,34 +26,34 @@ import SofiaImg from "@/assets/buyers/Sofia_Nilsson_Sweden_3_50.webp";
 import WeiLinImg from "@/assets/buyers/Wei-Lin_Tan_Singapore_2_50.webp";
 
 export const metadata: Metadata = {
-  title: "Credex | Buy & Sell Unused AI & Cloud Credits — Save Up to 60%",
-  description: "Buy discounted AWS, OpenAI, GCP, Azure, Claude, and Gemini credits at up to 60% off, or sell and monetize your unused AI and cloud credits securely. Credex is the trusted marketplace for buyers and sellers of AI and cloud credits.",
-  alternates: {
-    canonical: "https://credex.rocks/buyer",
-  },
-  openGraph: {
-    title: "Credex | Buy & Sell Unused AI & Cloud Credits — Save Up to 60%",
-    description: "Buy discounted AWS, OpenAI, GCP, Azure, and Claude credits at up to 60% off, or sell and monetize your unused AI and cloud credits securely through Credex.",
-    url: "https://credex.rocks/buyer",
-    siteName: "Credex",
-    images: [
-      {
-        url: "https://credex.rocks/images/credex-social.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Credex - Unused Cloud & AI Credits Marketplace",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Credex | Buy & Sell Unused AI & Cloud Credits — Save Up to 60%",
-    description: "Buy discounted AWS, OpenAI, GCP, Azure, and Claude credits at up to 60% off, or sell and monetize your unused AI and cloud credits securely through Credex.",
-    creator: "@credex",
-    images: ["https://credex.rocks/images/credex-social.jpg"],
-  },
+    title: "Credex | Buy & Sell Unused AI & Cloud Credits  Save Up to 60%",
+    description: "Buy discounted AWS, OpenAI, GCP, Azure, Claude, and Gemini credits at up to 60% off, or sell and monetize your unused AI and cloud credits securely. Credex is the trusted marketplace for buyers and sellers of AI and cloud credits.",
+    alternates: {
+        canonical: "https://credex.rocks/buyer",
+    },
+    openGraph: {
+        title: "Credex | Buy & Sell Unused AI & Cloud Credits  Save Up to 60%",
+        description: "Buy discounted AWS, OpenAI, GCP, Azure, and Claude credits at up to 60% off, or sell and monetize your unused AI and cloud credits securely through Credex.",
+        url: "https://credex.rocks/buyer",
+        siteName: "Credex",
+        images: [
+            {
+                url: "https://credex.rocks/images/credex-social.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Credex - Unused Cloud & AI Credits Marketplace",
+            },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Credex | Buy & Sell Unused AI & Cloud Credits  Save Up to 60%",
+        description: "Buy discounted AWS, OpenAI, GCP, Azure, and Claude credits at up to 60% off, or sell and monetize your unused AI and cloud credits securely through Credex.",
+        creator: "@credex",
+        images: ["https://credex.rocks/images/credex-social.jpg"],
+    },
 };
 
 export default function BuyerPage() {

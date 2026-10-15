@@ -48,7 +48,7 @@ function Hero() {
 
     return (
         <div className="h-screen relative flex justify-center items-center flex-col md:pt-0">
-            {/* LEFT Logos — CSS-only float + fade-in (zero JS animation cost) */}
+            {/* LEFT Logos  CSS-only float + fade-in (zero JS animation cost) */}
             <Image
                 src={GCPLogo}
                 alt="GCP"

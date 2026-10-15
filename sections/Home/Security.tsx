@@ -70,7 +70,7 @@ function Security() {
                 className="w-full md:grid md:grid-cols-2 gap-x-10 bg-[#19363F05] px-0 md:p-6"
                 variants={container}
             >
-                {/* LEFT — Image + Description */}
+                {/* LEFT  Image + Description */}
                 <motion.div variants={fadeUp}>
                     <MotionImage
                         src={SecurityImg}
@@ -101,7 +101,7 @@ function Security() {
                     </motion.div>
                 </motion.div>
 
-                {/* RIGHT — Security Descriptions */}
+                {/* RIGHT  Security Descriptions */}
                 <motion.div className="p-4" variants={fadeUp}>
                     <p className="text-2xl md:text-3xl font-pp-mori-semibold font-semibold md:w-[55%] leading-tight mt-8 md:mt-10">
                         Security, compliance & guarantees

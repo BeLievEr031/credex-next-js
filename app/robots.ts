@@ -54,7 +54,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "MistralAI-User", allow: "/" },
       { userAgent: "YouBot", allow: "/" },
 
-      // AI model training — not permitted
+      // AI model training  not permitted
       { userAgent: "GPTBot", disallow: "/" },
       { userAgent: "ClaudeBot", disallow: "/" },
       { userAgent: "Applebot-Extended", disallow: "/" },

@@ -4,7 +4,7 @@ import Footer from "@/sections/common/Footer";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Credex — Buy & Sell Cloud & AI Credits",
+  title: "Contact Us | Credex  Buy & Sell Cloud & AI Credits",
   description: "Have questions about buying discounted AWS, OpenAI, GCP, or Azure credits, or want to sell and monetize your unused AI and cloud credits? Contact the Credex team. We respond within 24 hours.",
   keywords: [
     "contact credex", "buy aws credits contact", "sell aws credits contact",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://credex.rocks/contact-us",
   },
   openGraph: {
-    title: "Contact Us | Credex — Buy & Sell Cloud & AI Credits",
+    title: "Contact Us | Credex  Buy & Sell Cloud & AI Credits",
     description: "Have questions about buying or selling unused cloud or AI credits? Contact the Credex team. We typically respond within 24 hours.",
     url: "https://credex.rocks/contact-us",
     type: "website",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us | Credex — Buy & Sell Cloud & AI Credits",
+    title: "Contact Us | Credex  Buy & Sell Cloud & AI Credits",
     description: "Have questions about buying or selling unused cloud or AI credits? Contact the Credex team. We typically respond within 24 hours.",
     images: ["https://credex.rocks/images/credex-social.jpg"],
   },

@@ -5,7 +5,7 @@ import { blogApi } from "@/api/api";
 export const revalidate = 3600; // revalidate every hour
 
 export const metadata: Metadata = {
-  title: "AI & Cloud Credits Blog — Guides, Tips & Savings | Credex",
+  title: "AI & Cloud Credits Blog  Guides, Tips & Savings | Credex",
   description: "Learn how to sell, buy, monetize, and resell unused AWS, GCP, Azure, OpenAI, Claude, and other AI and cloud credits. Expert guides on cloud cost optimization, reducing AWS bills, and getting the most from your AI budget.",
   keywords: [
     // How-to informational
@@ -36,28 +36,28 @@ export const metadata: Metadata = {
     canonical: "https://credex.rocks/blog",
   },
   openGraph: {
-    title: "AI & Cloud Credits Blog — Guides, Tips & Savings | Credex",
+    title: "AI & Cloud Credits Blog  Guides, Tips & Savings | Credex",
     description: "Learn how to sell, buy, monetize, and resell unused AWS, GCP, Azure, OpenAI, and Claude credits. Expert guides on cloud cost optimization and AI credit management.",
     url: "https://credex.rocks/blog",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI & Cloud Credits Blog — Guides, Tips & Savings | Credex",
+    title: "AI & Cloud Credits Blog  Guides, Tips & Savings | Credex",
     description: "Learn how to sell, buy, monetize, and resell unused AWS, GCP, Azure, OpenAI, and Claude credits. Expert guides on cloud cost optimization and AI credit management.",
   },
 };
 
 export default async function BlogPage() {
-    let blogs = [];
-    try {
-        const response = await blogApi.getBlogs({ active: true, limit: 100 });
-        if (response?.data?.success && Array.isArray(response?.data?.blogs)) {
-            blogs = response.data.blogs;
-        }
-    } catch (error) {
-        console.error("Failed to fetch blogs on server:", error);
+  let blogs = [];
+  try {
+    const response = await blogApi.getBlogs({ active: true, limit: 100 });
+    if (response?.data?.success && Array.isArray(response?.data?.blogs)) {
+      blogs = response.data.blogs;
     }
+  } catch (error) {
+    console.error("Failed to fetch blogs on server:", error);
+  }
 
-    return <BlogClient initialBlogs={blogs} />;
+  return <BlogClient initialBlogs={blogs} />;
 }

@@ -4,7 +4,7 @@ import Footer from "@/sections/common/Footer";
 import PlansAndPricing from "@/sections/Home/PlansAndPricing";
 
 export const metadata: Metadata = {
-  title: "Discounted AI & Cloud Credits — Plans & Pricing | Credex",
+  title: "Discounted AI & Cloud Credits  Plans & Pricing | Credex",
   description: "Buy cheap, discounted OpenAI, Claude, AWS, Azure, GCP, Cursor, Supabase, and Cloudflare credits at up to 60% off standard list prices. Explore verified AI and cloud credit packages with zero code changes.",
   keywords: [
     // Discount cloud credits
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     canonical: "https://credex.rocks/plans-pricing",
   },
   openGraph: {
-    title: "Discounted AI & Cloud Credits — Plans & Pricing | Credex",
+    title: "Discounted AI & Cloud Credits  Plans & Pricing | Credex",
     description: "Get discounted OpenAI, Claude, AWS, Azure, and GCP credits at up to 60% off. Explore verified plans and pricing for cheap AI and cloud credits on Credex.",
     url: "https://credex.rocks/plans-pricing",
     type: "website",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Discounted AI & Cloud Credits — Plans & Pricing | Credex",
+    title: "Discounted AI & Cloud Credits  Plans & Pricing | Credex",
     description: "Get discounted OpenAI, Claude, AWS, Azure, and GCP credits at up to 60% off. Explore verified plans and pricing for cheap AI and cloud credits on Credex.",
     images: ["https://credex.rocks/images/credex-social.jpg"],
   },
@@ -69,7 +69,7 @@ export default function PlansPricingPage() {
   return (
     <main className="min-h-screen pt-[120px] md:pt-[80px] font-pp-mori-regular overflow-x-hidden">
       <Navbar />
-      
+
       <div className="max-w-7xl mx-auto px-5 md:px-32 mt-16 text-center md:text-left">
         <h1 className="text-[36px] md:text-[56px] font-semibold font-pp-mori-semibold leading-tight text-[#19363F] mb-4">
           AI & Cloud Credit Plans

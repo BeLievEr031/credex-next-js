@@ -22,7 +22,7 @@ const ppMori = localFont({
 
 export const metadata: Metadata = {
   title: "Credex Buy & Sell Unused AI and Cloud Credits (OpenAI, AWS, GCP & More)",
-  description: "Credex is the trusted marketplace to buy, sell, and monetize unused AI and cloud credits from OpenAI, Claude, Gemini, Anthropic, AWS, GCP, Azure, and more — securely and at up to 60% off list price.",
+  description: "Credex is the trusted marketplace to buy, sell, and monetize unused AI and cloud credits from OpenAI, Claude, Gemini, Anthropic, AWS, GCP, Azure, and more  securely and at up to 60% off list price.",
   keywords: [
     // Buy intent
     "buy aws credits", "buy openai credits", "buy gcp credits", "buy azure credits",

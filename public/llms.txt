@@ -2,7 +2,7 @@
 
 > Credex is a marketplace for buying and selling unused AI and cloud credits. Companies with surplus credits from providers such as OpenAI, Anthropic (Claude), AWS, Azure, Google Cloud, MongoDB and Supabase sell them before they expire; companies that need those credits buy them at a discount and use them with no code changes. Credex is operated by Dreadnought Technology Private Limited, a registered company with offices in Dubai Silicon Oasis (UAE) and Gurugram (India).
 
-Credex sits between two problems. Startups and enterprises accumulate provider credits — from startup programmes, enterprise commitments or unused prepaid balances — that expire unused and become worthless. Other teams are paying full list price for the same services. Credex verifies the credits, handles the paperwork and transfer, and settles both sides.
+Credex sits between two problems. Startups and enterprises accumulate provider credits  from startup programmes, enterprise commitments or unused prepaid balances  that expire unused and become worthless. Other teams are paying full list price for the same services. Credex verifies the credits, handles the paperwork and transfer, and settles both sides.
 
 ## What Credex does
 
@@ -23,8 +23,8 @@ Credex provides a replacement guarantee if access becomes unavailable during the
 
 ## Core pages
 
-- [Credex — buy discounted AI and cloud credits](https://credex.rocks/): homepage. Provider coverage, how the process works, the guarantee, and the buyer FAQ.
-- [Sell unused AI and cloud credits](https://credex.rocks/seller): the seller side — ownership verification, anonymity and NDA terms, payout process.
+- [Credex  buy discounted AI and cloud credits](https://credex.rocks/): homepage. Provider coverage, how the process works, the guarantee, and the buyer FAQ.
+- [Sell unused AI and cloud credits](https://credex.rocks/seller): the seller side  ownership verification, anonymity and NDA terms, payout process.
 - [Plans and pricing](https://credex.rocks/plans-pricing): credit packages, discount bands and what is included.
 - [About Credex](https://credex.rocks/about-us): the company, the legal entity and the offices behind the marketplace.
 - [Contact](https://credex.rocks/contact-us): enquiries, both office addresses, and support at support@credex.rocks.

@@ -394,7 +394,7 @@ const TableRow = ({ item, highlight }: { item: any, highlight: boolean }) => {
 function CreditsTable({ platforms }: { platforms: IPlatform[] }) {
     return (
         <div className="w-full mx-auto border border-gray-200 rounded-lg overflow-hidden shadow-sm">
-            {/* Header — hidden on mobile since cards are self-labelled */}
+            {/* Header  hidden on mobile since cards are self-labelled */}
             <div className="hidden md:grid grid-cols-4 bg-black text-white px-6 py-4 text-sm font-semibold">
                 <div>Platform</div>
                 <div>Credits</div>

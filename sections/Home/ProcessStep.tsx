@@ -228,7 +228,7 @@ function ProcessStep() {
             viewport={{ once: true, amount: 0.3 }}
             id="how-it-works"
         >
-            {/* LEFT SIDE — Text & Steps */}
+            {/* LEFT SIDE  Text & Steps */}
             <motion.div variants={container}>
                 <motion.p
                     className="text-[30px] md:text-[40px] font-semibold tracking-tight md:w-[95%] line-clamp-6 leading-tight"
@@ -272,7 +272,7 @@ function ProcessStep() {
                 </motion.div>
             </motion.div>
 
-            {/* RIGHT SIDE — Image & CTA Card */}
+            {/* RIGHT SIDE  Image & CTA Card */}
             <motion.div className="mt-20 md:mt-32" variants={container}>
                 <motion.div variants={imageVariant}>
                     <Image src={ProcessStepImg} alt="Process steps" className="w-[298px] md:w-[470px] mx-auto h-auto" />
