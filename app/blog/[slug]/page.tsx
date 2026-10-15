@@ -19,8 +19,13 @@ export async function generateStaticParams() {
     } catch (error) {
         console.error("Failed to generate static params for blog pages:", error);
     }
-    // Next.js 16 requires at least one param to build successfully.
-    return [{ slug: "placeholder-slug" }];
+    // If the API is unreachable at build time, fail the build loudly so the
+    // problem is caught immediately rather than deploying a site where every
+    // blog post URL returns 404.
+    throw new Error(
+        "[Blog] generateStaticParams: Could not fetch blog slugs from the API. " +
+        "Ensure NEXT_PUBLIC_API_URL is set and the backend is reachable during build."
+    );
 }
 
 export async function generateMetadata({
@@ -130,7 +135,7 @@ export default async function DynamicSingleBlogPage({
             "headline": blog.title,
             "image": [blog.bannerImgUrl || "https://credex.rocks/images/credex-social.jpg"],
             "datePublished": blog.createdAt,
-            "dateModified": blog.createdAt,
+            "dateModified": blog.updatedAt ?? blog.createdAt,
             "description": description,
             "author": {
                 "@type": "Organization",

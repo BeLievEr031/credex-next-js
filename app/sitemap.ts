@@ -42,6 +42,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const sitemapEntries: MetadataRoute.Sitemap = staticRoutes.map((route) => {
     let priority = 0.5;
     let changeFrequency: "daily" | "weekly" | "monthly" = "weekly";
+    // Use a pinned date for static pages — avoids signalling to Google that
+    // every page "changed" on every redeploy, which dilutes crawl budget.
+    const lastModified = new Date("2025-10-01T00:00:00.000Z");
 
     if (route === "") {
       priority = 1.0;
@@ -59,7 +62,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     return {
       url: `${baseUrl}${route}`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency,
       priority,
     };
@@ -68,7 +71,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Add product plan entries
   const productPlanEntries: MetadataRoute.Sitemap = productPlanRoutes.map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date("2025-10-01T00:00:00.000Z"),
     changeFrequency: "weekly" as const,
     priority: 0.85,
   }));

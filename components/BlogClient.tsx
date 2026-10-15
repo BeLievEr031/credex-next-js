@@ -1,5 +1,6 @@
 "use client";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+
 import Image from "next/image";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
@@ -37,7 +38,6 @@ const formatDate = (dateString: string) => {
 };
 
 export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] }) {
-    const router = useRouter();
     const [email, setEmail] = useState("");
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState<{ type: "success" | "error"; message: string } | null>(null);
@@ -123,9 +123,9 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
                     </div>
 
                     {heroBlog && (
-                        <div
-                            className="hidden md:block py-12 md:py-3 bg-[#1212120A] md:px-4 rounded-xl space-y-2 cursor-pointer"
-                            onClick={() => router.push(`/blog/${heroBlog.slug}`)}
+                        <Link
+                            href={`/blog/${heroBlog.slug}`}
+                            className="hidden md:block py-12 md:py-3 bg-[#1212120A] md:px-4 rounded-xl space-y-2 hover:bg-[#12121014] transition-colors"
                         >
                             <h2 className="text-2xl font-semibold font-pp-mori-semibold w-[75%] line-clamp-2">
                                 {heroBlog.title}
@@ -142,7 +142,7 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
                                     className="object-cover object-top"
                                 />
                             </div>
-                        </div>
+                        </Link>
                     )}
                 </div>
 
@@ -168,11 +168,10 @@ export default function BlogClient({ initialBlogs }: { initialBlogs: BlogItem[] 
 }
 
 const BlogCard = ({ blog }: { blog: BlogItem }) => {
-    const router = useRouter();
     return (
-        <div
-            className="cursor-pointer w-full max-w-[378px]"
-            onClick={() => router.push(`/blog/${blog.slug}`)}
+        <Link
+            href={`/blog/${blog.slug}`}
+            className="block w-full max-w-[378px] group"
         >
             <div className="bg-[#121212] w-full h-[200px] sm:h-[220px] md:h-[230px] rounded-[20px] overflow-hidden relative">
                 <Image
@@ -180,17 +179,17 @@ const BlogCard = ({ blog }: { blog: BlogItem }) => {
                     alt={blog.title}
                     fill
                     unoptimized
-                    className="object-cover object-top"
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
                 />
             </div>
 
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold pt-4 w-full font-pp-mori-semibold leading-snug line-clamp-2">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold pt-4 w-full font-pp-mori-semibold leading-snug line-clamp-2 group-hover:text-[#086841] transition-colors">
                 {blog.title}
             </h3>
 
             <div className="flex items-center gap-2 text-sm text-[#19363FB2] pt-2">
                 <p>Credex • {blog.isHardcoded ? blog.date : formatDate(blog.createdAt!)}</p>
             </div>
-        </div>
+        </Link>
     );
 };
