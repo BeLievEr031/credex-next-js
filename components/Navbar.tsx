@@ -116,13 +116,30 @@ import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import { ChevronDown } from "lucide-react";
 
 interface IProp {
     links?: { lable: string; link: string }[];
 }
 
+const productNavItems = [
+    { name: "OpenAI Credits", href: "/buy-openai-credits", badge: "Tier 5" },
+    { name: "Claude Credits", href: "/buy-claude-credits", badge: "Waitlist" },
+    { name: "AWS Bedrock", href: "/buy-aws-credits", badge: "2 Yrs" },
+    { name: "GCP Vertex AI", href: "/buy-gcp-credits" },
+    { name: "Azure OpenAI", href: "/buy-azure-credits" },
+    { name: "MongoDB Atlas", href: "/buy-mongodb-credits" },
+    { name: "Supabase", href: "/buy-supabase-credits" },
+    { name: "PostHog", href: "/buy-posthog-credits", badge: "No Expiry" },
+    { name: "ElevenLabs", href: "/buy-elevenlabs-credits" },
+    { name: "DigitalOcean", href: "/buy-digitalocean-credits" },
+    { name: "Deepgram", href: "/buy-deepgram-credits" },
+    { name: "Cursor AI", href: "/buy-cursor-credits" },
+    { name: "Lambda GPUs", href: "/buy-lambda-gpu-credits" },
+];
+
 const defaultHeaderLinks = [
-    { lable: "Pricing", link: "/plans-pricing" },
+    { lable: "Plans", link: "/plans-pricing" },
     { lable: "Blog", link: "/blog" },
 ];
 
@@ -131,6 +148,7 @@ function Navbar({ links = defaultHeaderLinks }: IProp) {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isMenuOpen, setIsMenuOpen] = useState(false); // for mobile menu toggle
+    const [isMobilePlansOpen, setIsMobilePlansOpen] = useState(false);
     // Scroll listener
     useEffect(() => {
         const handleScroll = () => {
@@ -216,6 +234,60 @@ function Navbar({ links = defaultHeaderLinks }: IProp) {
             {/* Right Links */}
             {links.length > 0 && <div className="hidden md:flex items-center gap-x-8 text-[#000000CC] pr-2">
                 {links.map(({ lable, link }) => {
+                    const isPlans = link === "/plans-pricing" || lable.toLowerCase().includes("plan") || lable.toLowerCase().includes("pricing");
+
+                    if (isPlans) {
+                        return (
+                            <div key={lable} className="relative group py-2">
+                                <Link
+                                    href="/plans-pricing"
+                                    className="hover:text-[#086841] transition-colors flex items-center gap-1 cursor-pointer"
+                                >
+                                    <span>{lable}</span>
+                                    <ChevronDown className="w-3.5 h-3.5 text-gray-500 group-hover:rotate-180 transition-transform duration-200" />
+                                </Link>
+
+                                {/* Dropdown Menu */}
+                                <div className="absolute top-full -left-28 pt-3 hidden group-hover:block transition-all z-50 pointer-events-auto">
+                                    <div className="w-[430px] bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200 p-4">
+                                        <div className="flex items-center justify-between pb-3 mb-2 border-b border-gray-100">
+                                            <span className="text-[11px] uppercase font-semibold text-[#086841] tracking-wider">
+                                                Credit Plans by Provider
+                                            </span>
+                                            <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#0FF395]/20 text-[#086841]">
+                                                Up to 50% off
+                                            </span>
+                                        </div>
+                                        <div className="grid grid-cols-2 gap-1.5">
+                                            {productNavItems.map((prod) => (
+                                                <Link
+                                                    key={prod.name}
+                                                    href={prod.href}
+                                                    className="px-2.5 py-1.5 rounded-lg hover:bg-gray-50 hover:text-[#086841] text-xs font-medium text-[#19363F] flex items-center justify-between transition-colors group/item"
+                                                >
+                                                    <span className="truncate pr-1">{prod.name}</span>
+                                                    {prod.badge && (
+                                                        <span className="text-[9px] px-1.5 py-0.5 rounded bg-gray-100 text-gray-600 group-hover/item:bg-[#086841]/10 group-hover/item:text-[#086841] shrink-0 font-medium">
+                                                            {prod.badge}
+                                                        </span>
+                                                    )}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                        <div className="mt-3 pt-2.5 border-t border-gray-100 text-center">
+                                            <Link
+                                                href="/plans-pricing"
+                                                className="text-xs font-semibold text-[#086841] hover:text-[#065032] inline-flex items-center gap-1"
+                                            >
+                                                View all 13 credit plans & pricing →
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    }
+
                     if (link.startsWith("/")) {
                         return (
                             <Link key={lable} href={link} className="hover:text-[#086841] transition-colors">
@@ -256,7 +328,7 @@ function Navbar({ links = defaultHeaderLinks }: IProp) {
                     "absolute -top-4 left-0 w-full bg-white shadow-md rounded-3xl flex flex-col gap-4 py-6 transition-all duration-500 overflow-hidden md:hidden ",
                     {
                         "max-h-0 opacity-0 pointer-events-none": !isMenuOpen,
-                        "max-h-[400px] opacity-100": isMenuOpen,
+                        "max-h-[85vh] overflow-y-auto opacity-100": isMenuOpen,
                     }
                 )}
             >
@@ -326,9 +398,51 @@ function Navbar({ links = defaultHeaderLinks }: IProp) {
                     </Link>
                 </div>
 
-                <div className="flex flex-col items-start gap-y-2 px-3">
+                <div className="flex flex-col items-start gap-y-2 px-6 w-full">
 
                     {links.map(({ lable, link }) => {
+                        const isPlans = link === "/plans-pricing" || lable.toLowerCase().includes("plan") || lable.toLowerCase().includes("pricing");
+
+                        if (isPlans) {
+                            return (
+                                <div key={lable} className="w-full py-1">
+                                    <div
+                                        onClick={() => setIsMobilePlansOpen(!isMobilePlansOpen)}
+                                        className="flex items-center justify-between cursor-pointer hover:text-[#086841] py-1 font-semibold"
+                                    >
+                                        <span>{lable}</span>
+                                        <ChevronDown className={clsx("w-4 h-4 transition-transform", { "rotate-180": isMobilePlansOpen })} />
+                                    </div>
+                                    {isMobilePlansOpen && (
+                                        <div className="pl-3 py-2 flex flex-col gap-2 border-l-2 border-[#0FF395]/40 my-1 max-h-56 overflow-y-auto">
+                                            <Link
+                                                href="/plans-pricing"
+                                                onClick={() => setIsMenuOpen(false)}
+                                                className="text-xs font-semibold text-[#086841] py-1"
+                                            >
+                                                Overview: All Plans & Pricing →
+                                            </Link>
+                                            {productNavItems.map((prod) => (
+                                                <Link
+                                                    key={prod.name}
+                                                    href={prod.href}
+                                                    onClick={() => setIsMenuOpen(false)}
+                                                    className="text-xs text-gray-700 hover:text-[#086841] py-0.5 flex items-center justify-between pr-2"
+                                                >
+                                                    <span>{prod.name}</span>
+                                                    {prod.badge && (
+                                                        <span className="text-[9px] px-1.5 py-0.2 rounded bg-gray-100 text-gray-500 font-medium">
+                                                            {prod.badge}
+                                                        </span>
+                                                    )}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            );
+                        }
+
                         if (link.startsWith("/")) {
                             return (
                                 <Link key={lable} href={link} onClick={() => setIsMenuOpen(false)} className="hover:text-[#086841] transition-colors py-1">

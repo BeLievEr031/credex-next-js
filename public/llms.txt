@@ -30,7 +30,23 @@ Credex provides a replacement guarantee if access becomes unavailable during the
 - [Contact](https://credex.rocks/contact-us): enquiries, both office addresses, and support at support@credex.rocks.
 - [Blog](https://credex.rocks/blog): guides on buying and selling credits by provider, plus cloud and AI cost reduction.
 
-## Buying credits by provider
+## Buying credits by provider (Product Pages)
+
+- [Buy OpenAI API credits](https://credex.rocks/buy-openai-credits): verified OpenAI API credits with Tier 5 rate limits in $2.5K, $5K and $25K packs, valid 1 year.
+- [Buy Anthropic Claude API credits](https://credex.rocks/buy-claude-credits): discounted Claude credits with enterprise rate limits, valid 1 year (or via AWS Bedrock).
+- [Buy AWS credits for Amazon Bedrock](https://credex.rocks/buy-aws-credits): run Claude models on Amazon Bedrock, $5K to $100K packs, valid 2 years with enterprise support.
+- [Buy Google Cloud (GCP) credits for Vertex AI](https://credex.rocks/buy-gcp-credits): build with Gemini models, $25K and $100K packs, valid 1 year with enterprise support.
+- [Buy Azure OpenAI credits](https://credex.rocks/buy-azure-credits): run GPT models in Azure, $25K and $100K packs, valid 1 year.
+- [Buy MongoDB Atlas credits](https://credex.rocks/buy-mongodb-credits): Atlas database credits in $15K and $125K packs, valid 1 year with enterprise support.
+- [Buy Supabase credits](https://credex.rocks/buy-supabase-credits): Postgres database, auth and storage in $25K and $125K packs, valid 1 year.
+- [Buy PostHog credits](https://credex.rocks/buy-posthog-credits): $50K credit pack with no expiry date and enterprise support.
+- [Buy ElevenLabs credits](https://credex.rocks/buy-elevenlabs-credits): text-to-speech and voice AI credits in $5K and $30K packs, valid 1 year.
+- [Buy DigitalOcean credits](https://credex.rocks/buy-digitalocean-credits): Droplets, databases and Kubernetes in $5K and $30K packs, valid 1 year.
+- [Buy Deepgram credits](https://credex.rocks/buy-deepgram-credits): speech-to-text and transcription $500K credit pack with enterprise rate limits.
+- [Buy Cursor credits for teams](https://credex.rocks/buy-cursor-credits): engineering team $50K pack, valid 1 year with enterprise rate limits.
+- [Buy Lambda GPU cloud credits](https://credex.rocks/buy-lambda-gpu-credits): AI training and inference on GPUs, $100K pack, valid 1 year.
+
+## Provider Guides & Tutorials
 
 - [Buy discounted AWS credits](https://credex.rocks/blog/buy-discounted-aws-credits-and-cut-your-cloud-bill-by-up-to-50-percent): how discounted AWS credits are transferred and what they can cut from a cloud bill.
 - [Buy discounted OpenAI credits](https://credex.rocks/blog/buy-discounted-openai-credits-how-to-get-500k-in-tier-5-api-credits-at-50-percent-off): buying OpenAI API credits, including Tier 5 balances, at a discount.

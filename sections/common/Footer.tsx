@@ -67,27 +67,27 @@ function Footer({ actionBtn1Text = "Get credits", actionBtn2Text = "Talk to sale
                         </h3>
                         <p className="text-[#8FA8A6] text-[13px] leading-[1.9]">
                             Credex is the most trusted marketplace to buy discounted AI and cloud credits at up to 50% off retail rates. Whether you need to{" "}
-                            <Link href="/blog/buy-discounted-aws-credits-and-cut-your-cloud-bill-by-up-to-50-percent" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                            <Link href="/buy-aws-credits" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
                                 buy AWS credits
                             </Link>,{" "}
-                            <Link href="/blog/buy-discounted-azure-credits-cut-your-cloud-bill-up-to-50-percent-before-the-next-cost-spike" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                            <Link href="/buy-azure-credits" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
                                 buy Azure credits
                             </Link>,{" "}
-                            <Link href="/blog/buy-discounted-gcp-credits-before-your-next-bigquery-bill-or-tpu-waitlist-costs-you-more" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                            <Link href="/buy-gcp-credits" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
                                 buy GCP credits
                             </Link>, or{" "}
-                            <Link href="/blog/buy-discounted-openai-credits-how-to-get-500k-in-tier-5-api-credits-at-50-percent-off" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                            <Link href="/buy-openai-credits" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
                                 buy OpenAI credits
                             </Link>, our network of verified sellers has you covered. Developers and startups can also{" "}
-                            <Link href="/blog/buy-discounted-claude-opus-credits-how-ai-startups-avoid-burning-300k-a-year-on-api-costs" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                            <Link href="/buy-claude-credits" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
                                 buy Claude credits
                             </Link>,{" "}
-                            <Link href="/blog/buy-discounted-gemini-api-credits-how-we-scaled-gemini-1-5-pro-to-50k-users-without-going-bankrupt" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                            <Link href="/buy-gcp-credits" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
                                 buy Gemini credits
                             </Link>,{" "}
-                            <Link href="/blog/buy-gpu-credits-and-skip-the-waitlist-how-to-train-foundation-models-without-delay" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
+                            <Link href="/buy-lambda-gpu-credits" className="underline underline-offset-2 hover:text-[#0FF395] transition-colors">
                                 buy GPU credits
-                            </Link>, and access discounted Anthropic, OpenRouter, and Lambda Labs credits all through one platform, without the usual procurement overhead.
+                            </Link>, and access discounted Anthropic, Supabase, MongoDB, Cursor, and Lambda Labs credits all through one platform, without the usual procurement overhead.
                         </p>
                     </div>
 

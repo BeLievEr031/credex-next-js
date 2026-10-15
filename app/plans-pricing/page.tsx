@@ -5,7 +5,7 @@ import PlansAndPricing from "@/sections/Home/PlansAndPricing";
 
 export const metadata: Metadata = {
   title: "Discounted AI & Cloud Credits  Plans & Pricing | Credex",
-  description: "Buy cheap, discounted OpenAI, Claude, AWS, Azure, GCP, Cursor, Supabase, and Cloudflare credits at up to 60% off standard list prices. Explore verified AI and cloud credit packages with zero code changes.",
+  description: "Buy cheap, discounted OpenAI, Claude, AWS, Azure, GCP, Cursor, Supabase, and Cloudflare credits at up to 50% off standard list prices. Explore verified AI and cloud credit packages with zero code changes.",
   keywords: [
     // Discount cloud credits
     "discounted aws credits", "cheap aws credits", "discounted gcp credits",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Discounted AI & Cloud Credits  Plans & Pricing | Credex",
-    description: "Get discounted OpenAI, Claude, AWS, Azure, and GCP credits at up to 60% off. Explore verified plans and pricing for cheap AI and cloud credits on Credex.",
+    description: "Get discounted OpenAI, Claude, AWS, Azure, and GCP credits at up to 50% off. Explore verified plans and pricing for cheap AI and cloud credits on Credex.",
     url: "https://credex.rocks/plans-pricing",
     type: "website",
     images: [
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Discounted AI & Cloud Credits  Plans & Pricing | Credex",
-    description: "Get discounted OpenAI, Claude, AWS, Azure, and GCP credits at up to 60% off. Explore verified plans and pricing for cheap AI and cloud credits on Credex.",
+    description: "Get discounted OpenAI, Claude, AWS, Azure, and GCP credits at up to 50% off. Explore verified plans and pricing for cheap AI and cloud credits on Credex.",
     images: ["https://credex.rocks/images/credex-social.jpg"],
   },
 };
@@ -75,7 +75,7 @@ export default function PlansPricingPage() {
           AI & Cloud Credit Plans
         </h1>
         <p className="text-[#5B677C] text-base md:text-lg max-w-2xl font-pp-mori-regular">
-          Explore our available premium credits from OpenAI, Claude, AWS, Azure, and GCP. Save up to 60% with secure escrow verification.
+          Explore our available premium credits from OpenAI, Claude, AWS, Azure, and GCP. Save up to 50% with secure escrow verification.
         </p>
       </div>
 

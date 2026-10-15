@@ -22,6 +22,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/about-us",
   ];
 
+  // 13 Product Plan pages
+  const productPlanRoutes = [
+    "/buy-openai-credits",
+    "/buy-claude-credits",
+    "/buy-aws-credits",
+    "/buy-gcp-credits",
+    "/buy-azure-credits",
+    "/buy-mongodb-credits",
+    "/buy-supabase-credits",
+    "/buy-posthog-credits",
+    "/buy-elevenlabs-credits",
+    "/buy-digitalocean-credits",
+    "/buy-deepgram-credits",
+    "/buy-cursor-credits",
+    "/buy-lambda-gpu-credits",
+  ];
+
   const sitemapEntries: MetadataRoute.Sitemap = staticRoutes.map((route) => {
     let priority = 0.5;
     let changeFrequency: "daily" | "weekly" | "monthly" = "weekly";
@@ -35,6 +52,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     } else if (route === "/blog") {
       priority = 0.8;
       changeFrequency = "daily";
+    } else if (route === "/plans-pricing") {
+      priority = 0.85;
+      changeFrequency = "weekly";
     }
 
     return {
@@ -44,6 +64,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority,
     };
   });
+
+  // Add product plan entries
+  const productPlanEntries: MetadataRoute.Sitemap = productPlanRoutes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+  sitemapEntries.push(...productPlanEntries);
 
   // Dynamic pages from the blog API
   try {

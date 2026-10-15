@@ -18,6 +18,7 @@ import DeepgramSrc from "../../assets/logos/deepgram.jpeg"
 import OpenaiSrc from "../../assets/logos/openai.png"
 import CursorSrc from "../../assets/logos/cursor.png"
 import LambdaSrc from "../../assets/logos/lambda.png"
+import Link from "next/link"
 import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
@@ -25,6 +26,7 @@ import { motion, AnimatePresence } from 'motion/react'
 
 interface IPlatform {
     platform: string;
+    slug?: string;
     logo: string;
     credits: string[];
     validity: string;
@@ -34,6 +36,7 @@ interface IPlatform {
 const platforms = [
     {
         "platform": "OpenAI",
+        "slug": "buy-openai-credits",
         "logo": OpenaiSrc,
         "credits": ["$2.5k", "5k", "$25k"],
         "validity": "1 yr",
@@ -41,6 +44,7 @@ const platforms = [
     },
     {
         "platform": "Anthropic/Claude",
+        "slug": "buy-claude-credits",
         "logo": ClaudeSrc,
         "credits": ["$5K", "$10K", "$25K", "$100K"],
         "validity": "1 yr",
@@ -48,6 +52,7 @@ const platforms = [
     },
     {
         "platform": "AWS (Claude Models via Bedrock)",
+        "slug": "buy-aws-credits",
         "logo": AwsSrc,
         "credits": ["$5K", "$10K", "$25K", "$100K"],
         "validity": "2 yr",
@@ -55,6 +60,7 @@ const platforms = [
     },
     {
         "platform": "GCP/Vertex AI (Gemini Models)",
+        "slug": "buy-gcp-credits",
         "logo": GCPSrc,
         "credits": ["$25K", "$100K"],
         "validity": "1 yr",
@@ -62,6 +68,7 @@ const platforms = [
     },
     {
         "platform": "Azure OpenAI (GPT Models)",
+        "slug": "buy-azure-credits",
         "logo": AzureSrc,
         "credits": ["$25K", "$100K"],
         "validity": "1 yr",
@@ -69,6 +76,7 @@ const platforms = [
     },
     {
         "platform": "MongoDB",
+        "slug": "buy-mongodb-credits",
         "logo": MongoSrc,
         "credits": ["$15k", "$125k"],
         "validity": "1 yr",
@@ -76,6 +84,7 @@ const platforms = [
     },
     {
         "platform": "Supabase",
+        "slug": "buy-supabase-credits",
         "logo": SupaSrc,
         "credits": ["$25k", "$125k"],
         "validity": "1 yr",
@@ -83,6 +92,7 @@ const platforms = [
     },
     {
         "platform": "PostHog",
+        "slug": "buy-posthog-credits",
         "logo": PostHogSrc,
         "credits": ["$50k"],
         "validity": "No Expiry",
@@ -90,6 +100,7 @@ const platforms = [
     },
     {
         "platform": "Eleven Labs",
+        "slug": "buy-elevenlabs-credits",
         "logo": ElevenLabsSrc,
         "credits": ["$5k", "$30k"],
         "validity": "1 yr",
@@ -97,6 +108,7 @@ const platforms = [
     },
     {
         "platform": "Digital Ocean",
+        "slug": "buy-digitalocean-credits",
         "logo": DigitalSrc,
         "credits": ["$5k", "$30k"],
         "validity": "1 yr",
@@ -104,6 +116,7 @@ const platforms = [
     },
     {
         "platform": "Deepgram",
+        "slug": "buy-deepgram-credits",
         "logo": DeepgramSrc,
         "credits": ["$500k"],
         "validity": "1 yr",
@@ -111,6 +124,7 @@ const platforms = [
     },
     {
         "platform": "Cursor",
+        "slug": "buy-cursor-credits",
         "logo": CursorSrc,
         "credits": ["$50k"],
         "validity": "1 yr",
@@ -118,6 +132,7 @@ const platforms = [
     },
     {
         "platform": "Lambda (GPUs)",
+        "slug": "buy-lambda-gpu-credits",
         "logo": LambdaSrc,
         "credits": ["$100k"],
         "validity": "1 yr",
@@ -228,9 +243,12 @@ function PlansAndPricing() {
                         <p className='uppercase font-pp-mori-regular text-[#747373] tracking-widest'>Credit plans</p>
                         <p className='font-semibold font-pp-mori-semibold text-2xl md:text-3xl'>Explore our plans</p>
                     </div>
-                    <button className='bg-[#1A1A1A] px-[20px] rounded-xl text-white font-pp-mori-regular cursor-pointer md:mt-0 py-4 md:py-0'
-                        onClick={() => setShowModal(true)}
-                    >View all plans</button>
+                    <Link
+                        href="/plans-pricing"
+                        className='bg-[#1A1A1A] hover:bg-black px-[20px] rounded-xl text-white font-pp-mori-regular cursor-pointer md:mt-0 py-3 md:py-3 inline-flex items-center justify-center transition-colors'
+                    >
+                        View all plans
+                    </Link>
                 </div>
                 <motion.div className='grid grid-cols-1 md:grid-cols-3 pt-10 gap-5' variants={sectionVariants}>
                     {loading && displayPlatforms === platforms ? (
@@ -247,6 +265,7 @@ function PlansAndPricing() {
                                     credits={p.credits.join(" / ")}
                                     validity={p.validity}
                                     rateLimits={p.rateLimits}
+                                    slug={p.slug}
                                 />
                             </motion.div>
                         ))
