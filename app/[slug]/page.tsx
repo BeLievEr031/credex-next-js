@@ -199,7 +199,7 @@ export default async function ProductPlanPage({
               </p>
 
               {/* Special Claude Sold-Out Highlight Box & Waitlist */}
-              {plan.isSoldOut && (
+              {/* {plan.isSoldOut && (
                 <div className="mb-8 p-6 rounded-2xl bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="px-3 py-1 rounded-full bg-amber-500 text-white text-xs font-bold uppercase tracking-wider">
@@ -251,7 +251,7 @@ export default async function ProductPlanPage({
                     </div>
                   )}
                 </div>
-              )}
+              )} */}
 
               {/* CTA Buttons as real HTML links */}
               <div className="flex flex-wrap items-center gap-4">

@@ -78,7 +78,7 @@ export const productPlans: ProductPlan[] = [
     planBox: {
       productName: "OpenAI API",
       validity: "1 year",
-      credits: "$2.5K / $5K / $25K",
+      credits: "$30K",
       rateLimits: "Tier 5",
       discount: "Up to 50% off",
     },
@@ -131,7 +131,7 @@ export const productPlans: ProductPlan[] = [
     shortName: "Claude",
     logo: ClaudeSrc,
     isSoldOut: true,
-    soldOutBadgeText: "Sold Out",
+    // soldOutBadgeText: "Sold Out",
     soldOutAlternativeText: "Need Claude now? Get Claude models through AWS Bedrock",
     soldOutAlternativeUrl: "/buy-aws-credits",
     title: "Buy Anthropic Claude API Credits at a Discount | Credex",
@@ -147,7 +147,7 @@ export const productPlans: ProductPlan[] = [
     planBox: {
       productName: "Anthropic Claude API",
       validity: "1 year",
-      credits: "SOLD OUT",
+      credits: "10K/100K",
       rateLimits: "Enterprise Rate Limits",
       discount: "Up to 50% off",
     },
@@ -465,7 +465,7 @@ export const productPlans: ProductPlan[] = [
     planBox: {
       productName: "Supabase",
       validity: "1 year",
-      credits: "$25K / $125K",
+      credits: "$25K",
       rateLimits: "Enterprise Support",
       discount: "Up to 50% off",
     },

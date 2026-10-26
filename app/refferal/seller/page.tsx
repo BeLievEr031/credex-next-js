@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import RefferalForm from "@/components/RefferalForm";
 
@@ -30,5 +31,9 @@ export const metadata: Metadata = {
 };
 
 export default function RefferalSellerPage() {
-    return <RefferalForm />;
+    return (
+        <Suspense fallback={null}>
+            <RefferalForm />
+        </Suspense>
+    );
 }

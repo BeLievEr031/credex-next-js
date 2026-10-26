@@ -38,7 +38,7 @@ const platforms = [
         "platform": "OpenAI",
         "slug": "buy-openai-credits",
         "logo": OpenaiSrc,
-        "credits": ["$2.5k", "5k", "$25k"],
+        "credits": ["$30K"],
         "validity": "1 yr",
         "rateLimits": "Tier 5"
     },
@@ -46,7 +46,7 @@ const platforms = [
         "platform": "Anthropic/Claude",
         "slug": "buy-claude-credits",
         "logo": ClaudeSrc,
-        "credits": ["$5K", "$10K", "$25K", "$100K"],
+        "credits": ["$10K", "$100K"],
         "validity": "1 yr",
         "rateLimits": "Enterprise Rate Limits"
     },
@@ -110,7 +110,7 @@ const platforms = [
         "platform": "Digital Ocean",
         "slug": "buy-digitalocean-credits",
         "logo": DigitalSrc,
-        "credits": ["$5k", "$30k"],
+        "credits": ["$25K"],
         "validity": "1 yr",
         "rateLimits": "Enterprise Rate Limits"
     },

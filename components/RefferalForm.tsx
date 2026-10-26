@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { 
     Eye, 
     EyeOff, 
@@ -42,7 +42,7 @@ interface FormErrors {
     [key: string]: string;
 }
 
-const RefferalForm = () => {
+const RefferalFormContent = () => {
     const router = useRouter();
     const searchParams = useSearchParams();
     const [currentStep, setCurrentStep] = useState(1);
@@ -711,6 +711,14 @@ const RefferalForm = () => {
                 </div>
             </div>
         </div>
+    );
+};
+
+const RefferalForm = () => {
+    return (
+        <Suspense fallback={null}>
+            <RefferalFormContent />
+        </Suspense>
     );
 };
 
