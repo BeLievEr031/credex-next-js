@@ -309,7 +309,7 @@ export default function AboutUsClient() {
                 Registered Global Entity
               </h3>
               <p className="text-[#5B677C] text-[14px] leading-relaxed mt-2.5">
-                Operated by <strong>Dreadnought Technology Private Limited</strong>, with corporate offices in Dubai Silicon Oasis (UAE) and Cyber City, Gurugram (India).
+                Operated by <strong>Credex</strong>, with corporate offices in Dubai Silicon Oasis (UAE) and Cyber City, Gurugram (India) and Dover, Delaware (US).
               </p>
             </div>
 
