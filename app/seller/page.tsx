@@ -275,10 +275,10 @@ export default function SellerPage() {
                         lable: "Contact",
                         link: '#contact'
                     },
-                    {
-                        lable: "Blog",
-                        link: '/blog'
-                    },
+                    // {
+                    //     lable: "Blog",
+                    //     link: '/blog'
+                    // },
                 ]}
             />
             <Hero />

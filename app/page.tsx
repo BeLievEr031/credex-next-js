@@ -329,10 +329,10 @@ export default function Home() {
                         lable: "Contact",
                         link: '#contact'
                     },
-                    {
-                        lable: "Blog",
-                        link: '/blog'
-                    },
+                    // {
+                    //     lable: "Blog",
+                    //     link: '/blog'
+                    // },
                 ]}
             />
             <Hero />
