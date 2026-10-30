@@ -104,3 +104,78 @@ body {
   -webkit-text-stroke: 0.439px #000;
   text-align: center;
 }
+
+/* Credex Green Theme Developer Utilities & Animations */
+.text-gradient-credex {
+  background: linear-gradient(135deg, #086841 0%, #0BB571 50%, #086841 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-mint {
+  background: linear-gradient(135deg, #0FF395 0%, #086841 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.credex-glow-card {
+  background: #FFFFFF;
+  border: 1px solid #E5EDE8;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.credex-glow-card:hover {
+  border-color: rgba(15, 243, 149, 0.6);
+  box-shadow: 0 12px 30px -10px rgba(8, 104, 65, 0.12), 0 0 20px -5px rgba(15, 243, 149, 0.2);
+  transform: translateY(-2px);
+}
+
+.credex-dark-card {
+  background: #062524;
+  border: 1px solid rgba(15, 243, 149, 0.2);
+  transition: all 0.3s ease;
+}
+
+.credex-dark-card:hover {
+  border-color: rgba(15, 243, 149, 0.5);
+  box-shadow: 0 15px 35px -10px rgba(6, 37, 36, 0.5), 0 0 25px -5px rgba(15, 243, 149, 0.25);
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(15, 243, 149, 0.5);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 12px rgba(15, 243, 149, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(15, 243, 149, 0);
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+@keyframes packet-flow {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-packet-flow {
+  animation: packet-flow 2s ease-in-out infinite;
+}
+
+

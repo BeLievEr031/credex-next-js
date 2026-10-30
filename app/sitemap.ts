@@ -20,6 +20,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/plans-pricing",
     "/contact-us",
     "/about-us",
+    "/launching",
   ];
 
   // 13 Product Plan pages
