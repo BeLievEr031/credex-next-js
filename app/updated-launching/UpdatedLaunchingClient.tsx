@@ -29,7 +29,8 @@ import { inquiryApi, newsletterApi } from "@/api/api";
 import ClaudeLogo from "@/assets/logos/calud.webp";
 import GeminiLogo from "@/assets/logos/gemini.webp";
 import ChatgptLogo from "@/assets/logos/chatgpt.webp";
-import AWSLogo from "@/assets/logos/aws.webp";
+import DeepSeekLogo from "@/assets/logos/deepseek.webp";
+import KimiLogo from "@/assets/logos/kimi.webp";
 
 // Short snippets: the only change is base_url + api_key
 const CODE_SNIPPETS = {
@@ -73,7 +74,7 @@ const reply = await client.chat.completions.create({
   },
 };
 
-const ROTATING_MODELS = ["Claude", "GPT", "Gemini", "DeepSeek", "Llama"];
+const ROTATING_MODELS = ["Claude", "GPT", "Gemini", "DeepSeek", "Kimi", "Llama"];
 
 const STEPS = [
   {
@@ -236,26 +237,32 @@ export default function UpdatedLaunchingClient() {
         <Image
           src={ClaudeLogo}
           alt="Claude"
-          className="absolute left-6 md:left-14 top-[22%] z-10 w-[60px] md:w-[100px] h-auto hidden sm:block hero-logo pointer-events-none drop-shadow-md"
+          className="absolute left-6 md:left-14 top-[14%] z-10 w-[60px] md:w-[100px] h-auto hidden sm:block hero-logo pointer-events-none drop-shadow-md"
           style={{ "--float-delay": "0.3s" } as React.CSSProperties}
         />
         <Image
           src={GeminiLogo}
           alt="Gemini"
-          className="absolute left-16 md:left-28 bottom-[15%] z-10 w-[65px] md:w-[105px] h-auto hidden sm:block hero-logo pointer-events-none drop-shadow-md"
+          className="absolute left-4 lg:left-28 bottom-[22%] z-10 w-[65px] lg:w-[105px] h-auto hidden sm:block hero-logo pointer-events-none drop-shadow-md"
           style={{ "--float-delay": "0.8s" } as React.CSSProperties}
         />
         <Image
           src={ChatgptLogo}
           alt="OpenAI"
-          className="absolute right-6 md:right-14 top-[20%] z-10 w-[60px] md:w-[100px] h-auto hidden sm:block hero-logo pointer-events-none drop-shadow-md"
+          className="absolute right-6 md:right-14 top-[14%] z-10 w-[60px] md:w-[100px] h-auto hidden sm:block hero-logo pointer-events-none drop-shadow-md"
           style={{ "--float-delay": "0.5s" } as React.CSSProperties}
         />
+        {/* <Image
+          src={DeepSeekLogo}
+          alt="DeepSeek"
+          className="absolute left-0 top-[44%] z-10 w-[100px] h-auto hidden lg:block hero-logo pointer-events-none drop-shadow-md"
+          style={{ "--float-delay": "0.6s" } as React.CSSProperties}
+        /> */}
         <Image
-          src={AWSLogo}
-          alt="AWS Bedrock"
-          className="absolute right-16 md:right-28 bottom-[18%] z-10 w-[65px] md:w-[105px] h-auto hidden sm:block hero-logo pointer-events-none drop-shadow-md"
-          style={{ "--float-delay": "0.1s" } as React.CSSProperties}
+          src={KimiLogo}
+          alt="Kimi"
+          className="absolute right-4 lg:right-28 bottom-[22%] z-10 w-[65px] lg:w-[105px] h-auto hidden sm:block hero-logo pointer-events-none drop-shadow-md"
+          style={{ "--float-delay": "0.2s" } as React.CSSProperties}
         />
 
         <div className="absolute -top-[180px] md:-top-[220px] left-1/2 -translate-x-1/2 -z-10 pointer-events-none opacity-60">
