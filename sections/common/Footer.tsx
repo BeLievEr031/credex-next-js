@@ -190,6 +190,22 @@ function Footer({ actionBtn1Text = "Get credits", actionBtn2Text = "Talk to sale
                                     Gurgaon - 122002
                                 </p>
                             </div>
+
+
+                            <div className="mt-2 md:mt-0">
+
+                                <p className="text-black font-semibold font-pp-mori-semibold">USA</p>
+
+                                <p>
+                                    8 The Green, Ste D,
+                                </p>
+                                <p>
+                                    Dover, Delaware 19901,
+                                </p>
+                                <p>
+                                    United States
+                                </p>
+                            </div>
                         </div>
 
                         <a href="mailto:team@credex.rocks" className="pt-2 underline cursor-pointer z-[10] relative flex text-xl items-center gap-x-1">
